@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="MAkbarD's blog"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.9.2"><meta name="og:image" content="/img/blog/logo.svg"><title>Todo App Docker | MAD4869</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/_astro/index.CtxG5iuT.css"><script type="module" src="/_astro/hoisted.DZL4CV8D.js"></script></head> <body> <header class="w-screen px-px"> <nav class="flex items-center justify-between w-full px-16 py-4 border shadow-lg text-fuchsia-800 border-fuchsia-800 rounded-b-3xl shadow-fuchsia-200/20"> <a href="/" class="text-3xl font-bold" title="Home"> <img src="/_astro/logo.DoQbXR2Z_Z1GL1ve.svg" alt="Logo Blog" loading="lazy" class="drop-shadow-[0_0_10px_rgba(232,121,249,0.5)]" width="50" height="16" decoding="async"> </a> <ul class="flex items-center justify-center gap-8"> <li title="Self-introduction"> <a href="/about" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+About
+</a> </li> <li title="Software engineering portfolio"> <a href="/software-engineering" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+Software Engineering
+</a> </li> <li title="Writing portfolio"> <a href="/writing" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+Writing
+</a> </li> <li title="Some random rambling about anything"> <a href="/notes" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+Notes
+</a> </li> </ul> <ul class="flex items-center justify-center gap-4"> <li class="transition-all hover:text-fuchsia-400 hover:scale-110" title="Go to Twitter"> <a href="https://twitter.com/MAD4869" target="_blank"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> </a> </li> <li class="transition-all hover:text-fuchsia-400 hover:scale-110" title="Go to Github"> <a href="https://github.com/mad4869" target="_blank"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 480 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg> </a> </li> <li class="transition-all hover:text-fuchsia-400 hover:scale-110" title="Go to Wattpad"> <a href="https://www.wattpad.com/user/aconitin_4869" target="_blank"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.034 3.09c-1.695.113-3.9 2.027-6.9 6.947.245-2.758.345-4.716-.857-5.743-.823-.702-2.764-.974-3.926.536C.18 6.349-.09 9.312.024 12.432c.238 6.518 2.544 8.487 4.59 8.487h.001c3.623 0 4.13-4.439 6.604-8.4-.09 1.416-.008 2.668.266 3.532 1.078 3.398 4.784 3.663 6.467.21 2.374-4.87 3.058-6.016 5.453-9.521 1.58-2.314-.252-3.812-2.374-2.735-1.09.554-2.86 1.935-5.065 4.867.387-2.23.28-5.996-2.932-5.782z"></path></svg> </a> </li> <li class="transition-transform hover:scale-110" title="Go to KaryaKarsa"> <a href="https://karyakarsa.com/aconitin/" target="_blank"> <img src="/_astro/logo-kk.qwGrKF09_Z1sqeHs.svg" alt="Logo KaryaKarsa" loading="lazy" width="10" height="10" decoding="async"> </a> </li> <li class="transition-transform hover:scale-110" title="Go to Kwikku"> <a href="https://www.kwikku.com/mad4869" target="_blank"> <img src="/_astro/logo-kwik.CgTZu3Cm_Z9Bwy4.svg" alt="Logo Kwikku" loading="lazy" width="15" height="15" decoding="async"> </a> </li> </ul> </nav> </header>  <main class="min-h-[calc(100dvh-8rem)] text-fuchsia-400 py-8 px-16 space-y-4"> <section class="flex items-center justify-between"> <div> <h1 class="text-3xl font-bold">Todo App Docker</h1> <h6 class="">A project to containerize a Flask-based simple to-do app using Docker.</h6> </div> <div> <p class="text-xs text-fuchsia-400/50">Docker</p><p class="text-xs text-fuchsia-400/50">Dev Ops</p> </div> </section> <img src="/_astro/overtime-system.lGE-G_8n_Z1BYCEV.webp" alt="Hero Image of Todo App Docker" class="max-w-full mx-auto transition-shadow shadow-lg rounded-xl shadow-fuchsia-200/20 hover:shadow-fuchsia-200/40" loading="lazy" width="1918" height="954" decoding="async"> <article class="prose prose-img:rounded-xl text-fuchsia-200 prose-headings:text-fuchsia-400 dark:prose-invert prose-a:text-fuchsia-200 hover:prose-a:text-fuchsia-800"> <h2 id="background-scenario">Background Scenario</h2>
+<p>Imagine yourself as a software engineer who needs to deploy a Flask-based to-do web application and intends to utilize Docker for building an isolated container for the web app.</p>
+<h2 id="building-process">Building Process</h2>
+<h3 id="1-build-the-image-of-the-web-app">1. Build the Image of the Web App</h3>
+<p>The initial step involves creating a <strong>Dockerfile</strong> that consolidates the necessary steps to build a custom image of the web app.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="dockerfile"><code><span class="line"><span style="color:#F97583">FROM</span><span style="color:#E1E4E8"> python:3.10</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">LABEL</span><span style="color:#E1E4E8"> version=</span><span style="color:#9ECBFF">"1.0"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">WORKDIR</span><span style="color:#E1E4E8"> /todo-app</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">COPY</span><span style="color:#E1E4E8"> requirements.txt .</span></span>
+<span class="line"><span style="color:#F97583">RUN</span><span style="color:#E1E4E8"> pip install -r requirements.txt</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">ENV</span><span style="color:#E1E4E8"> FLASK_APP=</span><span style="color:#9ECBFF">"run.py"</span></span>
+<span class="line"><span style="color:#F97583">ENV</span><span style="color:#E1E4E8"> FLASK_DEBUG=1</span></span>
+<span class="line"><span style="color:#F97583">ENV</span><span style="color:#E1E4E8"> ENVIRONMENT=</span><span style="color:#9ECBFF">"development"</span></span>
+<span class="line"><span style="color:#F97583">ENV</span><span style="color:#E1E4E8"> POSTGRES_USER=</span><span style="color:#9ECBFF">"postgres"</span></span>
+<span class="line"><span style="color:#F97583">ENV</span><span style="color:#E1E4E8"> POSTGRES_PORT=</span><span style="color:#9ECBFF">"5432"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">RUN</span><span style="color:#E1E4E8"> curl -fsSL https://deb.nodesource.com/setup_lts.x | bash -</span></span>
+<span class="line"><span style="color:#F97583">RUN</span><span style="color:#E1E4E8"> apt-get install -y nodejs</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">COPY</span><span style="color:#E1E4E8"> . .</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">RUN</span><span style="color:#E1E4E8"> npm install</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">RUN</span><span style="color:#E1E4E8"> flask digest compile</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">EXPOSE</span><span style="color:#E1E4E8"> 5000</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">CMD</span><span style="color:#E1E4E8"> [</span><span style="color:#9ECBFF">"flask"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"run"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"--host=0.0.0.0"</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"></span></code></pre>
+<p>Do not forget to set up an <code>.env</code> file in the root directory to store all the environmental variables required for the Flask app.</p>
+<h4 id="env">.env</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>SECRET_KEY="some_secret_key"</span></span>
+<span class="line"><span>JWT_SECRET_KEY="some_secret_key"</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>After setting up the <code>.env</code> file, the next step is to execute the <code>docker build</code> command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> build</span><span style="color:#79B8FF"> --no-cache</span><span style="color:#79B8FF"> -t</span><span style="color:#9ECBFF"> todo-app:latest</span><span style="color:#9ECBFF"> .</span></span>
+<span class="line"></span></code></pre>
+<p>This command will build the Docker image based on the instructions provided in the Dockerfile and the context of the current directory.</p>
+<!-- ![Build a Docker image with Dockerfile](docs/docker-build.png) -->
+<p>This custom base image can also be pulled from the Docker Hub registry using <code>docker pull</code> command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> pull</span><span style="color:#9ECBFF"> mad4869/todo-app:latest</span></span>
+<span class="line"></span></code></pre>
+<!-- ![Pull a Docker image from Docker Hub](docs/docker-pull-todo.png) -->
+<h3 id="2-pull-the-postgres-image">2. Pull the Postgres Image</h3>
+<p>Since the web app requires a database connection, we will be using the PostgreSQL base image. We can pull the image from the Docker registry using the <code>docker pull</code> command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> pull</span><span style="color:#9ECBFF"> postgres:latest</span></span>
+<span class="line"></span></code></pre>
+<!-- ![Pull a Docker image from Docker Hub](docs/docker-pull-postgres.png) -->
+<h3 id="3-run-the-containers">3. Run the Containers</h3>
+<p>Now that we have obtained the required images, it’s time to run the containers using the <code>docker run</code> command. While running the containers, we also need to set up the volume, network, ports, and environmental variables to ensure that both the Flask app and Postgres containers can work together seamlessly.</p>
+<p>Let’s create a new volume and network for both the Flask app and Postgres containers.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> network</span><span style="color:#9ECBFF"> create</span><span style="color:#9ECBFF"> todo-network</span></span>
+<span class="line"></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> volume</span><span style="color:#9ECBFF"> create</span><span style="color:#9ECBFF"> todo-volume</span></span>
+<span class="line"></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> volume</span><span style="color:#9ECBFF"> create</span><span style="color:#9ECBFF"> postgres-volume</span></span>
+<span class="line"></span></code></pre>
+<p>First, we run the PostgreSQL container with the following command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> run</span><span style="color:#79B8FF"> --name</span><span style="color:#9ECBFF"> postgres-container</span><span style="color:#79B8FF"> -v</span><span style="color:#9ECBFF"> postgres-volume</span><span style="color:#79B8FF"> --network</span><span style="color:#9ECBFF"> todo-network</span><span style="color:#79B8FF"> -p</span><span style="color:#9ECBFF"> 5432:5432</span><span style="color:#79B8FF"> -e</span><span style="color:#9ECBFF"> POSTGRES_PASSWORD=password</span><span style="color:#79B8FF"> -e</span><span style="color:#9ECBFF"> POSTGRES_DB=todo-db</span><span style="color:#79B8FF"> -d</span><span style="color:#9ECBFF"> postgres</span></span>
+<span class="line"></span></code></pre>
+<p>In this command, the PostgreSQL container is named <code>postgres-container</code> We create a volume named <code>postgres-volume</code> to store the data. The container is connected to the <code>todo-network</code> network. Port <strong>5432</strong> is mapped from the container to the host machine. Adjust it if you have another service running in the same port. The environment variables <code>POSTGRES_PASSWORD</code> and <code>POSTGRES_DB</code> are set to <code>password</code> and <code>todo-db</code>, respectively. Adjust the values as per your requirements.</p>
+<p>Next, we run the Flask app container with the following command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> run</span><span style="color:#79B8FF"> --name</span><span style="color:#9ECBFF"> todo-app-container</span><span style="color:#79B8FF"> -v</span><span style="color:#9ECBFF"> todo-volume</span><span style="color:#79B8FF"> --network</span><span style="color:#9ECBFF"> todo-network</span><span style="color:#79B8FF"> -p</span><span style="color:#9ECBFF"> 5000:5000</span><span style="color:#79B8FF"> -e</span><span style="color:#9ECBFF"> POSTGRES_PASSWORD=password</span><span style="color:#79B8FF"> -e</span><span style="color:#9ECBFF"> POSTGRES_DB=todo-db</span><span style="color:#79B8FF"> -e</span><span style="color:#9ECBFF"> POSTGRES_HOST=postgres-container</span><span style="color:#79B8FF"> -d</span><span style="color:#9ECBFF"> todo-app</span></span>
+<span class="line"></span></code></pre>
+<p>In this command, the Flask app container is named <code>todo-app-container</code> Port 5000 is mapped from the container to the host machine. The environment variables <code>POSTGRES_PASSWORD</code>, <code>POSTGRES_DB</code>, and <code>POSTGRES_HOST</code> are set to the values according to the Postgres setup.</p>
+<p>To establish the connection between the Flask app and Postgres, we can use <code>docker exec</code> to run the necessary <code>flask db</code> commands inside the container:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> todo-app-container</span><span style="color:#9ECBFF"> flask</span><span style="color:#9ECBFF"> db</span><span style="color:#9ECBFF"> init</span></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> todo-app-container</span><span style="color:#9ECBFF"> flask</span><span style="color:#9ECBFF"> db</span><span style="color:#9ECBFF"> migrate</span></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> todo-app-container</span><span style="color:#9ECBFF"> flask</span><span style="color:#9ECBFF"> db</span><span style="color:#9ECBFF"> upgrade</span></span>
+<span class="line"></span></code></pre>
+<!-- ![Run docker containers](docs/docker-run.png) -->
+<p>And now, the Flask app will run inside the <code>todo-app-container</code> and establish a connection to the <code>postgres-container</code> as its database.</p>
+<!-- ![Accessing the web app in the port 5000](docs/browser.png) -->
+<p><em>The Flask to-do app in the port 5000</em></p>
+<!-- ![Checking connection to Postgres database in the port 5432 via dbeaver](docs/dbeaver.png) -->
+<p><em>Postgres in the port 5432, inspected using dbeaver</em></p>
+<h3 id="4-run-the-containers-with-docker-compose">4. Run the Containers with Docker-Compose</h3>
+<p>Another option is to run the containers simultaneously using the <code>docker compose</code> command. To do this, we first need to create a <code>docker-compose.yml</code> file:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="yml"><code><span class="line"><span style="color:#85E89D">version</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">'3'</span></span>
+<span class="line"><span style="color:#85E89D">services</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">  todo-app</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">    image</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">todo-app:latest</span></span>
+<span class="line"><span style="color:#85E89D">    container_name</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">todo-app-container</span></span>
+<span class="line"><span style="color:#85E89D">    restart</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">always</span></span>
+<span class="line"><span style="color:#85E89D">    ports</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">5000:5000</span></span>
+<span class="line"><span style="color:#85E89D">    volumes</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">todo-volume:/app/data</span></span>
+<span class="line"><span style="color:#85E89D">    command</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">flask run --host=0.0.0.0</span></span>
+<span class="line"><span style="color:#85E89D">    environment</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">POSTGRES_HOST=postgres-container</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">POSTGRES_DB=todo-db</span></span>
+<span class="line"><span style="color:#85E89D">    env_file</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">todo.env</span></span>
+<span class="line"><span style="color:#85E89D">    depends_on</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">postgres</span></span>
+<span class="line"><span style="color:#85E89D">    networks</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">todo-network</span></span>
+<span class="line"><span style="color:#85E89D">  postgres</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">    image</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">postgres:latest</span></span>
+<span class="line"><span style="color:#85E89D">    container_name</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">postgres-container</span></span>
+<span class="line"><span style="color:#85E89D">    restart</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">always</span></span>
+<span class="line"><span style="color:#85E89D">    ports</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">5433:5432</span></span>
+<span class="line"><span style="color:#85E89D">    volumes</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">postgres-volume:/var/lib/postgresql/data</span></span>
+<span class="line"><span style="color:#85E89D">    environment</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">POSTGRES_USER=postgres</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">POSTGRES_DB=todo-db</span></span>
+<span class="line"><span style="color:#85E89D">    env_file</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">postgres.env</span></span>
+<span class="line"><span style="color:#85E89D">    networks</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">      - </span><span style="color:#9ECBFF">todo-network</span></span>
+<span class="line"><span style="color:#85E89D">networks</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">  todo-network</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">    external</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span></span>
+<span class="line"><span style="color:#85E89D">volumes</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">  todo-volume</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">    external</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span></span>
+<span class="line"><span style="color:#85E89D">  postgres-volume</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#85E89D">    external</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span></span>
+<span class="line"></span></code></pre>
+<p>Inside the file, we configure all the components needed to run both containers, including the enviromental variables that are stored inside the <code>.env</code> files.</p>
+<h4 id="todoenv">todo.env</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>SECRET_KEY="some_secret_key"</span></span>
+<span class="line"><span>JWT_SECRET_KEY="some_secret_key"</span></span>
+<span class="line"><span>POSTGRES_PASSWORD="password"</span></span>
+<span class="line"><span></span></span></code></pre>
+<h4 id="postgresenv">postgres.env</h4>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="plaintext"><code><span class="line"><span>POSTGRES_PASSWORD="password"</span></span>
+<span class="line"><span></span></span></code></pre>
+<p>If all the components are ready, we run the <code>docker compose</code> command:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> compose</span><span style="color:#9ECBFF"> up</span><span style="color:#79B8FF"> -d</span></span>
+<span class="line"></span></code></pre>
+<!-- ![Running containers using docker compose](docs/docker-compose.png) -->
+<p>If there are no issues during the running of the containers, we run the <code>flask db</code> commands inside the Flask app container:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> todo-app-container</span><span style="color:#9ECBFF"> flask</span><span style="color:#9ECBFF"> db</span><span style="color:#9ECBFF"> init</span></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> todo-app-container</span><span style="color:#9ECBFF"> flask</span><span style="color:#9ECBFF"> db</span><span style="color:#9ECBFF"> migrate</span></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> todo-app-container</span><span style="color:#9ECBFF"> flask</span><span style="color:#9ECBFF"> db</span><span style="color:#9ECBFF"> upgrade</span></span>
+<span class="line"></span></code></pre>
+<h2 id="backup-and-restore">Backup and Restore</h2>
+<p>Once the containers are set up, it’s important to create scripts for data backup and restoration.</p>
+<p>The backup script will run as a <strong>cron job</strong> once a day and will generate backup data using <code>pg_dumpall</code> command.</p>
+<h3 id="backupsh">backup.sh</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sh"><code><span class="line"><span style="color:#6A737D">#!/bin/bash</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">BACKUP</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"path/to/backups/backup_$(</span><span style="color:#B392F0">date</span><span style="color:#9ECBFF"> +%d-%m-%Y).sql"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> postgres-container</span><span style="color:#9ECBFF"> pg_dumpall</span><span style="color:#79B8FF"> -U</span><span style="color:#9ECBFF"> postgres</span><span style="color:#F97583"> ></span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$BACKUP</span><span style="color:#9ECBFF">"</span></span>
+<span class="line"></span></code></pre>
+<p>Setting up the cron:</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">crontab</span><span style="color:#79B8FF"> -e</span></span>
+<span class="line"></span></code></pre>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">0</span><span style="color:#79B8FF"> 0</span><span style="color:#79B8FF"> *</span><span style="color:#79B8FF"> *</span><span style="color:#79B8FF"> *</span><span style="color:#9ECBFF"> /home/user/path/to/backup.sh</span></span>
+<span class="line"></span></code></pre>
+<!-- ![Setting up cron job to backup database data](docs/crontab.png) -->
+<p><em>cron job runs once a day every midnight</em></p>
+<p>In case of emergency where data needs to be restored, the backup data can be inserted into a running container and be executed to restore the missing data.</p>
+<h3 id="insert_backupsh">insert_backup.sh</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sh"><code><span class="line"><span style="color:#6A737D">#!/bin/bash</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">BACKUP</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"path/to/backups/backup_$(</span><span style="color:#B392F0">date</span><span style="color:#9ECBFF"> +%d-%m-%Y).sql"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> cp</span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$BACKUP</span><span style="color:#9ECBFF">"</span><span style="color:#9ECBFF"> postgres-container:/var/backups</span></span>
+<span class="line"></span></code></pre>
+<h4 id="insert-backup-data-to-a-running-postgres-container">insert backup data to a running postgres container</h4>
+<h3 id="restoresh">restore.sh</h3>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="sh"><code><span class="line"><span style="color:#6A737D">#!/bin/bash</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">BACKUP</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"/var/backups/backup_$(</span><span style="color:#B392F0">date</span><span style="color:#9ECBFF"> +%d-%m-%Y).sql"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#B392F0">docker</span><span style="color:#9ECBFF"> exec</span><span style="color:#9ECBFF"> postgres-container</span><span style="color:#9ECBFF"> psql</span><span style="color:#79B8FF"> -U</span><span style="color:#9ECBFF"> postgres</span><span style="color:#79B8FF"> -d</span><span style="color:#9ECBFF"> todo-db</span><span style="color:#79B8FF"> -f</span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$BACKUP</span><span style="color:#9ECBFF">"</span></span>
+<span class="line"></span></code></pre>
+<h4 id="execute-the-command-to-restore-data-inside-a-running-postgres-container">execute the command to restore data inside a running postgres container</h4>
+<h2 id="conclusion">Conclusion</h2>
+<p>That concludes the overview of the process for building Docker containers for a Flask web application and PostgreSQL. We have the option to run them separately and establish the connection between them, or we can run them simultaneously using <code>docker-compose</code>. Additionally, it is important to implement a backup and restore mechanism to ensure data integrity in case of any issues or data loss.</p> </article> </main>  <footer class="flex items-center justify-between w-screen px-16 py-4 text-xs border-t border-fuchsia-400 text-fuchsia-400"> <p>&copy; 2024. All rights reserved.</p> <span class="flex items-center gap-2"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg> <a href="mailto:mad4869@gmail.com" target="_blank" title="Reach via email" class="hover:underline">mad4869@gmail.com</a> </span> </footer>  </body> </html>

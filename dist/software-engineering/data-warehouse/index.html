@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="MAkbarD's blog"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.9.2"><meta name="og:image" content="/img/blog/logo.svg"><title>Data Warehouse | MAD4869</title><meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><link rel="stylesheet" href="/_astro/index.CtxG5iuT.css"><script type="module" src="/_astro/hoisted.DZL4CV8D.js"></script></head> <body> <header class="w-screen px-px"> <nav class="flex items-center justify-between w-full px-16 py-4 border shadow-lg text-fuchsia-800 border-fuchsia-800 rounded-b-3xl shadow-fuchsia-200/20"> <a href="/" class="text-3xl font-bold" title="Home"> <img src="/_astro/logo.DoQbXR2Z_Z1GL1ve.svg" alt="Logo Blog" loading="lazy" class="drop-shadow-[0_0_10px_rgba(232,121,249,0.5)]" width="50" height="16" decoding="async"> </a> <ul class="flex items-center justify-center gap-8"> <li title="Self-introduction"> <a href="/about" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+About
+</a> </li> <li title="Software engineering portfolio"> <a href="/software-engineering" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+Software Engineering
+</a> </li> <li title="Writing portfolio"> <a href="/writing" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+Writing
+</a> </li> <li title="Some random rambling about anything"> <a href="/notes" class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400">
+Notes
+</a> </li> </ul> <ul class="flex items-center justify-center gap-4"> <li class="transition-all hover:text-fuchsia-400 hover:scale-110" title="Go to Twitter"> <a href="https://twitter.com/MAD4869" target="_blank"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg> </a> </li> <li class="transition-all hover:text-fuchsia-400 hover:scale-110" title="Go to Github"> <a href="https://github.com/mad4869" target="_blank"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 480 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z"></path></svg> </a> </li> <li class="transition-all hover:text-fuchsia-400 hover:scale-110" title="Go to Wattpad"> <a href="https://www.wattpad.com/user/aconitin_4869" target="_blank"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M13.034 3.09c-1.695.113-3.9 2.027-6.9 6.947.245-2.758.345-4.716-.857-5.743-.823-.702-2.764-.974-3.926.536C.18 6.349-.09 9.312.024 12.432c.238 6.518 2.544 8.487 4.59 8.487h.001c3.623 0 4.13-4.439 6.604-8.4-.09 1.416-.008 2.668.266 3.532 1.078 3.398 4.784 3.663 6.467.21 2.374-4.87 3.058-6.016 5.453-9.521 1.58-2.314-.252-3.812-2.374-2.735-1.09.554-2.86 1.935-5.065 4.867.387-2.23.28-5.996-2.932-5.782z"></path></svg> </a> </li> <li class="transition-transform hover:scale-110" title="Go to KaryaKarsa"> <a href="https://karyakarsa.com/aconitin/" target="_blank"> <img src="/_astro/logo-kk.qwGrKF09_Z1sqeHs.svg" alt="Logo KaryaKarsa" loading="lazy" width="10" height="10" decoding="async"> </a> </li> <li class="transition-transform hover:scale-110" title="Go to Kwikku"> <a href="https://www.kwikku.com/mad4869" target="_blank"> <img src="/_astro/logo-kwik.CgTZu3Cm_Z9Bwy4.svg" alt="Logo Kwikku" loading="lazy" width="15" height="15" decoding="async"> </a> </li> </ul> </nav> </header>  <main class="min-h-[calc(100dvh-8rem)] text-fuchsia-400 py-8 px-16 space-y-4"> <section class="flex items-center justify-between"> <div> <h1 class="text-3xl font-bold">Data Warehouse</h1> <h6 class="">A simple data warehouse based on PostgreSQL.</h6> </div> <div> <p class="text-xs text-fuchsia-400/50">Pandas</p><p class="text-xs text-fuchsia-400/50">Luigi</p><p class="text-xs text-fuchsia-400/50">dbt</p><p class="text-xs text-fuchsia-400/50">Data Engineering</p> </div> </section> <img src="/_astro/overtime-system.lGE-G_8n_Z1BYCEV.webp" alt="Hero Image of Data Warehouse" class="max-w-full mx-auto transition-shadow shadow-lg rounded-xl shadow-fuchsia-200/20 hover:shadow-fuchsia-200/40" loading="lazy" width="1918" height="954" decoding="async"> <article class="prose prose-img:rounded-xl text-fuchsia-200 prose-headings:text-fuchsia-400 dark:prose-invert prose-a:text-fuchsia-200 hover:prose-a:text-fuchsia-800"> <h2 id="background">Background</h2>
+<p>A company specializing in selling various books, aims to separate their transaction storage from the storage intended for analysis.</p>
+<h3 id="requirements">Requirements</h3>
+<p>Stakeholders have outlined several analytical matrices they wish to explore, including:</p>
+<ul>
+<li>Monthly sales trends,</li>
+<li>A list of books and their total sales quantity over time,</li>
+<li>Customer behavior: Average time taken for repeat orders,</li>
+<li>Customer segmentation: Identifying distinct groups of customers based on their purchasing behavior, demographics, or other criteria,</li>
+<li>Profitability analysis: Determining the profitability of different products, customer segments, or sales channels to optimize business strategies,</li>
+<li>Sales forecasting: Predicting future sales trends and demand to optimize inventory levels and resource allocation.</li>
+</ul>
+<p>The constructed Data Warehouse should be able to address these analytical questions.</p>
+<h2 id="project-explanation">Project Explanation</h2>
+<h3 id="requirements-gathering--proposed-solution">Requirements Gathering &#x26; Proposed Solution</h3>
+<p>The company already has a database containing data about sales transactions.</p>
+<h4 id="the-challenge">The challenge</h4>
+<ol>
+<li>The company does not have specialized storage for data required for analytical purposes.</li>
+</ol>
+<h4 id="the-solutions">The solutions</h4>
+<ol>
+<li><strong>Data warehouse:</strong> constructing a data warehouse to store data specifically for analytical purposes, separate from daily transactional data.</li>
+<li><strong>ELT pipeline:</strong> establishing a data pipeline to extract data from sources, load the data into the warehouse, and transform the data to make them suitable for analysis.</li>
+</ol>
+<h3 id="design-of-data-warehouse-model">Design of Data Warehouse Model</h3>
+<p>In this project, the data warehouse design implemented the <strong>Kimball Model</strong>, which structures data with the <strong>Dimensional Model</strong> approach. The implementation of this design model required the following steps:</p>
+<ol>
+<li>Selecting the business process</li>
+<li>Declaring the grain</li>
+<li>Identifying the dimensions</li>
+<li>Identifying the facts</li>
+</ol>
+<h4 id="selecting-the-business-process">Selecting the business process</h4>
+<p>Based on the given requirements, the business process selected for this project is <strong>book order.</strong></p>
+<h4 id="declaring-the-grain">Declaring the grain</h4>
+<ul>
+<li>A single record represents a book purchase by a customer.</li>
+<li>A single record represents monthly sales for a book.</li>
+<li>A single record represents each customer’s current and previous order, as well as the time taken for repeat orders.</li>
+</ul>
+<h4 id="identifying-the-dimensions">Identifying the dimensions</h4>
+<ul>
+<li>Customer: <code>dim_customer</code></li>
+<li>Book: <code>dim_book</code></li>
+<li>Date: <code>dim_date</code></li>
+</ul>
+<h4 id="identifying-the-facts">Identifying the facts</h4>
+<ul>
+<li>Book order: <code>fct_book_order</code></li>
+<li>Monthly sale: <code>fct_monthly_sale</code></li>
+<li>Repeat order time: <code>fct_repeat_order_time</code></li>
+</ul>
+<h4 id="data-warehouse-diagram">Data warehouse diagram</h4>
+<!-- ![diagram of data warehouse](docs/ERD.jpg) -->
+<h4 id="slowly-changing-dimension-scd-strategy">Slowly Changing Dimension (SCD) strategy</h4>
+<p>The selected SCD strategy is type 2, which involves adding a new row for any updated record.</p>
+<h3 id="implementation-of-data-pipeline">Implementation of Data Pipeline</h3>
+<p>This project uses <strong>Luigi</strong> as a tool for constructing an ELT pipeline. Additionally, it employs the following complementary tools:</p>
+<ul>
+<li><strong>Sentry</strong> for alerting</li>
+<li><strong>Logging</strong> library for logging</li>
+<li><strong>Pandas</strong> for generating summaries</li>
+<li><strong>Cron</strong> for scheduling</li>
+</ul>
+<h4 id="extraction">Extraction</h4>
+<p>Data extraction from the source database is done by using <strong>SQLAlchemy</strong> and <strong>pandas.</strong></p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="py"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Extract</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">luigi</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">Task</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    current_timestamp </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> GlobalParams().CurrentTimestampParams</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        pass</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> run</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#E1E4E8">        logger </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> log_config(</span><span style="color:#9ECBFF">"extract"</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.current_timestamp)</span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#9ECBFF">"==================================STARTING EXTRACT DATA======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span></span>
+<span class="line"><span style="color:#F97583">        try</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">            start_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> time.time()    </span></span>
+<span class="line"><span style="color:#E1E4E8">            </span></span>
+<span class="line"><span style="color:#F97583">            for</span><span style="color:#E1E4E8"> table </span><span style="color:#F97583">in</span><span style="color:#E1E4E8"> tables:</span></span>
+<span class="line"><span style="color:#E1E4E8">                df </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.read_sql_query(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"SELECT * FROM </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">, source_conn)</span></span>
+<span class="line"><span style="color:#E1E4E8">                df.to_csv(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"./src/data/</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">.csv"</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">                logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"EXTRACT '</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">' - SUCCESS"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span></span>
+<span class="line"><span style="color:#E1E4E8">            source_conn.dispose()</span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.info(</span><span style="color:#9ECBFF">"EXTRACT ALL TABLES - DONE"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            end_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> time.time()</span></span>
+<span class="line"><span style="color:#E1E4E8">            exe_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> end_time </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> start_time</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            summary_data </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#9ECBFF">                "timestamp"</span><span style="color:#E1E4E8">: [datetime.datetime.now()],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "task"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Extract"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "status"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Success"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "execution_time"</span><span style="color:#E1E4E8">: [exe_time]</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.DataFrame(summary_data)</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary.to_csv(</span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.output().path, </span><span style="color:#FFAB70">index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">mode</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"a"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">        except</span><span style="color:#79B8FF"> Exception</span><span style="color:#F97583"> as</span><span style="color:#E1E4E8"> e:</span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.error(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"EXTRACT ALL TABLES - FAILED: </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">e</span><span style="color:#79B8FF">}\n{</span><span style="color:#E1E4E8">traceback.format_exc()</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            summary_data </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#9ECBFF">                "timestamp"</span><span style="color:#E1E4E8">: [datetime.datetime.now()],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "task"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Extract"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "status"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Failed"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "execution_time"</span><span style="color:#E1E4E8">: [</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.DataFrame(summary_data)</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary.to_csv(</span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.output().path, </span><span style="color:#FFAB70">index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">mode</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"a"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#9ECBFF">"==================================ENDING EXTRACT DATA======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> output</span><span style="color:#E1E4E8">(self) -> luigi.LocalTarget:</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> luigi.LocalTarget(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"</span><span style="color:#79B8FF">{ROOT_DIR}</span><span style="color:#9ECBFF">/pipeline/summaries/summary_</span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.current_timestamp</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">.csv"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span></code></pre>
+<h4 id="loading">Loading</h4>
+<p>The extracted data is loaded into the target database.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="py"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> Load</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">luigi</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">Task</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    current_timestamp </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> GlobalParams().CurrentTimestampParams</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> Extract()</span></span>
+<span class="line"><span style="color:#E1E4E8">    </span></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> run</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#E1E4E8">        logger </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> log_config(</span><span style="color:#9ECBFF">"load"</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.current_timestamp)</span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#9ECBFF">"==================================PREPARATION - TRUNCATE DATA======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">        # Truncating the tables before loading the data to avoid duplicates</span></span>
+<span class="line"><span style="color:#F97583">        try</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#F97583">            with</span><span style="color:#E1E4E8"> target_conn.connect() </span><span style="color:#F97583">as</span><span style="color:#E1E4E8"> conn:</span></span>
+<span class="line"><span style="color:#F97583">                for</span><span style="color:#E1E4E8"> table </span><span style="color:#F97583">in</span><span style="color:#E1E4E8"> tables:</span></span>
+<span class="line"><span style="color:#E1E4E8">                    select_query </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> text(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = '</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">'"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">                    result </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> conn.execute(select_query)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">                    if</span><span style="color:#E1E4E8"> result.scalar_one_or_none():</span></span>
+<span class="line"><span style="color:#E1E4E8">                        truncate_query </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> text(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"TRUNCATE public.</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF"> CASCADE"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">                        </span></span>
+<span class="line"><span style="color:#E1E4E8">                        conn.execute(truncate_query)</span></span>
+<span class="line"><span style="color:#E1E4E8">                        conn.commit()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">                        logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"TRUNCATE </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF"> - SUCCESS"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">                    else</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">                        logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Table '</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">' does not exist, skipping truncate operation"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.info(</span><span style="color:#9ECBFF">"TRUNCATE ALL TABLES - DONE"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">        except</span><span style="color:#79B8FF"> Exception</span><span style="color:#F97583"> as</span><span style="color:#E1E4E8"> e:</span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.error(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"TRUNCATE DATA - FAILED: </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">e</span><span style="color:#79B8FF">}\n{</span><span style="color:#E1E4E8">traceback.format_exc()</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#9ECBFF">"==================================ENDING PREPARATION======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#9ECBFF">"==================================STARTING LOAD DATA======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D">        # Loading the data after the tables already empty</span></span>
+<span class="line"><span style="color:#F97583">        try</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">            start_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> time.time()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            dfs: list[pd.DataFrame] </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> []</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">            for</span><span style="color:#E1E4E8"> table </span><span style="color:#F97583">in</span><span style="color:#E1E4E8"> tables:</span></span>
+<span class="line"><span style="color:#E1E4E8">                df </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.read_csv(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"./src/data/</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">.csv"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">                dfs.append(df)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">                logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"READ '</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">table</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">' - SUCCESS"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.info(</span><span style="color:#9ECBFF">"READ EXTRACTED TABLES - SUCCESS"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">            for</span><span style="color:#E1E4E8"> index, df </span><span style="color:#F97583">in</span><span style="color:#79B8FF"> enumerate</span><span style="color:#E1E4E8">(dfs):</span></span>
+<span class="line"><span style="color:#E1E4E8">                df.to_sql(</span></span>
+<span class="line"><span style="color:#FFAB70">                    name</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">tables[index],</span></span>
+<span class="line"><span style="color:#FFAB70">                    con</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">target_conn,</span></span>
+<span class="line"><span style="color:#FFAB70">                    schema</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"public"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">                    if_exists</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"append"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">                    index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span></span>
+<span class="line"><span style="color:#E1E4E8">                )</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">                logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"LOAD '</span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">tables[index]</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">' - SUCCESS"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">            </span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.info(</span><span style="color:#9ECBFF">"LOAD ALL DATA - SUCCESS"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            end_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> time.time()</span></span>
+<span class="line"><span style="color:#E1E4E8">            exe_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> end_time </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> start_time</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            summary_data </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#9ECBFF">                "timestamp"</span><span style="color:#E1E4E8">: [datetime.datetime.now()],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "task"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Load"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "status"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Success"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "execution_time"</span><span style="color:#E1E4E8">: [exe_time]</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.DataFrame(summary_data)</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary.to_csv(</span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.output().path, </span><span style="color:#FFAB70">index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">mode</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"a"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">        except</span><span style="color:#79B8FF"> Exception</span><span style="color:#F97583"> as</span><span style="color:#E1E4E8"> e:</span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.error(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"LOAD ALL DATA - FAILED: </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">e</span><span style="color:#79B8FF">}\n{</span><span style="color:#E1E4E8">traceback.format_exc()</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            summary_data </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#9ECBFF">                "timestamp"</span><span style="color:#E1E4E8">: [datetime.datetime.now()],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "task"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Load"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "status"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Failed"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "execution_time"</span><span style="color:#E1E4E8">: [</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.DataFrame(summary_data)</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary.to_csv(</span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.output().path, </span><span style="color:#FFAB70">index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">mode</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"a"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#9ECBFF">"==================================ENDING LOAD DATA======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">    </span></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> output</span><span style="color:#E1E4E8">(self) -> luigi.LocalTarget:</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> luigi.LocalTarget(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"</span><span style="color:#79B8FF">{ROOT_DIR}</span><span style="color:#9ECBFF">/pipeline/summaries/summary_</span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.current_timestamp</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">.csv"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span></code></pre>
+<h4 id="transformation">Transformation</h4>
+<p>Data transformation is conducted using <strong>dbt</strong> to manage all necessary processes, including creating staging data, generating dimension and fact tables, capturing snapshot data/SCD, and testing the data.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="py"><code><span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> DbtTask</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">luigi</span><span style="color:#E1E4E8">.</span><span style="color:#B392F0">Task</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    command </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> luigi.Parameter()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    current_timestamp </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> GlobalParams().CurrentTimestampParams</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        pass</span></span>
+<span class="line"><span style="color:#E1E4E8">    </span></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> run</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#E1E4E8">        logger </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> log_config(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"transform_</span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">, </span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.current_timestamp)</span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"==================================STARTING TRANSFORM DATA - dbt </span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">        try</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">            start_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> time.time()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">            with</span><span style="color:#79B8FF"> open</span><span style="color:#E1E4E8">(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"</span><span style="color:#79B8FF">{ROOT_DIR}</span><span style="color:#9ECBFF">/logs/transform_</span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">/transform_</span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">_</span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.current_timestamp</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">.log"</span><span style="color:#E1E4E8">, </span><span style="color:#9ECBFF">"a"</span><span style="color:#E1E4E8">) </span><span style="color:#F97583">as</span><span style="color:#E1E4E8"> f:</span></span>
+<span class="line"><span style="color:#E1E4E8">                p1 </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> sp.run(</span></span>
+<span class="line"><span style="color:#F97583">                    f</span><span style="color:#9ECBFF">"cd ./dwh_dbt/ &#x26;&#x26; dbt </span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">                    stdout</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">f,</span></span>
+<span class="line"><span style="color:#FFAB70">                    stderr</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">sp.</span><span style="color:#79B8FF">PIPE</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">                    text</span><span style="color:#F97583">=</span><span style="color:#79B8FF">True</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">                    shell</span><span style="color:#F97583">=</span><span style="color:#79B8FF">True</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">                    check</span><span style="color:#F97583">=</span><span style="color:#79B8FF">True</span></span>
+<span class="line"><span style="color:#E1E4E8">                )</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">                if</span><span style="color:#E1E4E8"> p1.returncode </span><span style="color:#F97583">==</span><span style="color:#79B8FF"> 0</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">                    logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Success running dbt </span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF"> process"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">                else</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">                    logger.error(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Failed running dbt </span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF"> process</span><span style="color:#79B8FF">\n{</span><span style="color:#E1E4E8">traceback.format_exc()</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            end_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> time.time()</span></span>
+<span class="line"><span style="color:#E1E4E8">            exe_time </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> end_time </span><span style="color:#F97583">-</span><span style="color:#E1E4E8"> start_time</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            summary_data </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#9ECBFF">                "timestamp"</span><span style="color:#E1E4E8">: [datetime.datetime.now()],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "task"</span><span style="color:#E1E4E8">: [</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"DBT </span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "status"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Success"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "execution_time"</span><span style="color:#E1E4E8">: [exe_time]</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.DataFrame(summary_data)</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary.to_csv(</span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.output().path, </span><span style="color:#FFAB70">index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">mode</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"a"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">        except</span><span style="color:#79B8FF"> Exception</span><span style="color:#F97583"> as</span><span style="color:#E1E4E8"> e:</span></span>
+<span class="line"><span style="color:#E1E4E8">            logger.error(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"Failed process: </span><span style="color:#79B8FF">{</span><span style="color:#E1E4E8">e</span><span style="color:#79B8FF">}\n{</span><span style="color:#E1E4E8">traceback.format_exc()</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">            summary_data </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#9ECBFF">                "timestamp"</span><span style="color:#E1E4E8">: [datetime.datetime.now()],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "task"</span><span style="color:#E1E4E8">: [</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"DBT </span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "status"</span><span style="color:#E1E4E8">: [</span><span style="color:#9ECBFF">"Failed"</span><span style="color:#E1E4E8">],</span></span>
+<span class="line"><span style="color:#9ECBFF">                "execution_time"</span><span style="color:#E1E4E8">: [</span><span style="color:#79B8FF">0</span><span style="color:#E1E4E8">]</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary </span><span style="color:#F97583">=</span><span style="color:#E1E4E8"> pd.DataFrame(summary_data)</span></span>
+<span class="line"><span style="color:#E1E4E8">            summary.to_csv(</span><span style="color:#79B8FF">self</span><span style="color:#E1E4E8">.output().path, </span><span style="color:#FFAB70">index</span><span style="color:#F97583">=</span><span style="color:#79B8FF">False</span><span style="color:#E1E4E8">, </span><span style="color:#FFAB70">mode</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"a"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">        </span></span>
+<span class="line"><span style="color:#E1E4E8">        logger.info(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"==================================ENDING TRANSFORM DATA - dbt </span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.command</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">======================================="</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#E1E4E8">    </span></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> output</span><span style="color:#E1E4E8">(self) -> luigi.LocalTarget:</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> luigi.LocalTarget(</span><span style="color:#F97583">f</span><span style="color:#9ECBFF">"</span><span style="color:#79B8FF">{ROOT_DIR}</span><span style="color:#9ECBFF">/pipeline/summaries/summary_</span><span style="color:#79B8FF">{self</span><span style="color:#E1E4E8">.current_timestamp</span><span style="color:#79B8FF">}</span><span style="color:#9ECBFF">.csv"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> DbtDebug</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">DbtTask</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    command </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "debug"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> Load()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> DbtDeps</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">DbtTask</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    command </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "deps"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> DbtDebug()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> DbtRun</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">DbtTask</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    command </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "run"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> DbtDeps()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> DbtSnapshot</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">DbtTask</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    command </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "snapshot"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> DbtRun()</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">class</span><span style="color:#B392F0"> DbtTest</span><span style="color:#E1E4E8">(</span><span style="color:#B392F0">DbtTask</span><span style="color:#E1E4E8">):</span></span>
+<span class="line"><span style="color:#E1E4E8">    command </span><span style="color:#F97583">=</span><span style="color:#9ECBFF"> "test"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    def</span><span style="color:#B392F0"> requires</span><span style="color:#E1E4E8">(self):</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> DbtSnapshot()</span></span>
+<span class="line"></span></code></pre>
+<h4 id="pipeline-building">Pipeline Building</h4>
+<p>Once all necessary steps have been defined, the aforementioned processes are assembled. Sentry is integrated to alert any issues that may arise.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="py"><code><span class="line"><span style="color:#E1E4E8">sentry_sdk.init(</span></span>
+<span class="line"><span style="color:#FFAB70">    dsn</span><span style="color:#F97583">=</span><span style="color:#79B8FF">SENTRY_DSN</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">    enable_tracing</span><span style="color:#F97583">=</span><span style="color:#79B8FF">True</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">if</span><span style="color:#79B8FF"> __name__</span><span style="color:#F97583"> ==</span><span style="color:#9ECBFF"> "__main__"</span><span style="color:#E1E4E8">:</span></span>
+<span class="line"><span style="color:#E1E4E8">    luigi.build(</span></span>
+<span class="line"><span style="color:#E1E4E8">        [Extract(), Load(), DbtDebug(), DbtDeps(), DbtRun(), DbtSnapshot(), DbtTest()],</span></span>
+<span class="line"><span style="color:#FFAB70">        local_scheduler</span><span style="color:#F97583">=</span><span style="color:#79B8FF">True</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">    )</span></span>
+<span class="line"></span></code></pre>
+<p>The database output can be accessed using Docker Image available <a href="https://hub.docker.com/r/mad4869/dwh_postgres">here</a>.</p>
+<h4 id="scheduling">Scheduling</h4>
+<p>The final step is create a script file to execute the pipeline and set up a cron job to ensure the script runs at regular intervals. For example, every 10 minutes.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#6A737D">#!/bin/bash</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">echo</span><span style="color:#9ECBFF"> "========== Start dbt with Luigi Orchestration Process =========="</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D"># Accessing Env Variables</span></span>
+<span class="line"><span style="color:#79B8FF">source</span><span style="color:#9ECBFF"> .env</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D"># Activate Virtual Environment</span></span>
+<span class="line"><span style="color:#79B8FF">source</span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$ROOT_DIR</span><span style="color:#9ECBFF">/dwh-venv/bin/activate"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D"># Set Python script</span></span>
+<span class="line"><span style="color:#E1E4E8">PYTHON_SCRIPT</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">$ROOT_DIR</span><span style="color:#9ECBFF">/elt.py"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D"># Get Current Date</span></span>
+<span class="line"><span style="color:#E1E4E8">current_datetime</span><span style="color:#F97583">=</span><span style="color:#E1E4E8">$(</span><span style="color:#B392F0">date</span><span style="color:#9ECBFF"> '+%d-%m-%Y_%H-%M'</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D"># Append Current Date in the Log File</span></span>
+<span class="line"><span style="color:#E1E4E8">LOG_FILE</span><span style="color:#F97583">=</span><span style="color:#9ECBFF">"</span><span style="color:#E1E4E8">$ROOT_DIR</span><span style="color:#9ECBFF">/logs/elt/elt_</span><span style="color:#E1E4E8">$current_datetime</span><span style="color:#9ECBFF">.log"</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#6A737D"># Run Python Script and Insert Log</span></span>
+<span class="line"><span style="color:#B392F0">python</span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$PYTHON_SCRIPT</span><span style="color:#9ECBFF">"</span><span style="color:#F97583"> >></span><span style="color:#9ECBFF"> "</span><span style="color:#E1E4E8">$LOG_FILE</span><span style="color:#9ECBFF">"</span><span style="color:#F97583"> 2>&#x26;1</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#79B8FF">echo</span><span style="color:#9ECBFF"> "========== End of dbt with Luigi Orchestration Process =========="</span></span>
+<span class="line"></span></code></pre>
+<h3 id="testing-scenario">Testing Scenario</h3>
+<h4 id="scenario-1-initial-load">Scenario 1: Initial load</h4>
+<p>Scenario 1 validates that the pipeline runs as expected, executing data extraction, loading, and transformation without encountering errors.</p>
+<!-- ![Luigi successfully executed the ELT process](docs/luigi.png) -->
+<p>It also verifies the successful construction of staging data, snapshot tables, dimension tables, and fact tables within the data warehouse.</p>
+<!-- ![Staging data inside the staging schema](docs/dwh_staging.png) -->
+<!-- ![Snapshot data inside the snapshot schema](docs/dwh_snapshot.png) -->
+<!-- ![Dimension and fact data inside the final schema](docs/dwh_final.png) -->
+<h4 id="scenario-2-scd-strategy">Scenario 2: SCD strategy</h4>
+<p>Scenario 2 ensures the effective implementation of the SCD strategy in the data warehouse, accurately capturing changes in dimensions. By using a type 2 strategy, the snapshot table adds a new row for updated records.</p>
+<p>Before updating the record:</p>
+<!-- ![The state of snapshot table before updating the record](docs/snapshot-before.png) -->
+<p>After updating the record:</p>
+<!-- ![The state of snapshot table after updating the record](docs/snapshot-after.png) -->
+<h4 id="scenario-3-new-data">Scenario 3: New data</h4>
+<p>Scenario 3 validates the ability of the data pipeline to handle new data from the source and load it into the data warehouse.</p>
+<p>Before inserting new data:</p>
+<!-- ![The state of the table before inserting new data](docs/new-data-before.png) -->
+<p>After inserting new data:</p>
+<!-- ![The state of the table after inserting new data](docs/new-data-after.png) -->
+<h2 id="conclusion">Conclusion</h2>
+<p>This document outlines the process of building a data warehouse using the dimensional model approach. While there is room for improvement, it provides a comprehensive overview of the step-by-step process for constructing an ELT pipeline and data warehouse.</p> </article> </main>  <footer class="flex items-center justify-between w-screen px-16 py-4 text-xs border-t border-fuchsia-400 text-fuchsia-400"> <p>&copy; 2024. All rights reserved.</p> <span class="flex items-center gap-2"> <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M0 0h24v24H0z"></path><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"></path></svg> <a href="mailto:mad4869@gmail.com" target="_blank" title="Reach via email" class="hover:underline">mad4869@gmail.com</a> </span> </footer>  </body> </html>
