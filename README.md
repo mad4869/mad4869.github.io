@@ -1,54 +1,35 @@
-# Astro Starter Kit: Basics
+# Muhammad Akbar Dermawan
 
-```sh
-npm create astro@latest -- --template basics
-```
+Hi there 👋
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## About me
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+I am a graduate of the Dentistry program at Universitas Airlangga, currently transitioning to a career in data and technology with a focus on data engineering and web development.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+💼 I'm currently proficient at:
 
-## 🚀 Project Structure
+- Python programming
+- SQL and relational database management
+- HTML, CSS, and JavaScript (and the frameworks such as React, Vue, and Astro) for web development
+- Basic data engineering skills, including ETL processes, data cleaning, data pipeline, and data warehouse creation
 
-Inside of your Astro project, you'll see the following folders and files:
+🌱 I’m currently learning on:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- Advanced data engineering, including data streaming, batch processing, and working with big data technologies like Hadoop and Spark
+- Cloud platforms (AWS, Google Cloud)
+- Machine learning basics
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+👯 I’m looking to collaborate on:
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- Data engineering projects
+- Web development initiatives
+- Open source contributions
+- Tech community events and meetups
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 📫 How to reach me
 
-## 🧞 Commands
+- Email: <mad4869@gmail.com>
+- LinkedIn: [Muhammad Akbar Dermawan](https://www.linkedin.com/in/muhammad-akbar-dermawan-86a90830a/)
+- Twitter: [@MAD4869](https://x.com/MAD4869/)
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to reach out if you want to connect or have any questions!
