@@ -1,0 +1,111 @@
+---
+import { Image } from "astro:assets";
+import { SiWattpad } from "react-icons/si";
+import { FaTwitter, FaGithubAlt } from "react-icons/fa";
+
+import logo from "../../assets/logo.svg";
+import logoKK from "../../assets/logo-kk.svg";
+import logoKwik from "../../assets/logo-kwik.svg";
+---
+
+<nav
+    class="flex items-center justify-between w-full px-16 py-4 border shadow-lg text-fuchsia-800 border-fuchsia-800 rounded-b-3xl shadow-fuchsia-200/20"
+>
+    <a href="/" class="text-3xl font-bold" title="Home">
+        <Image
+            src={logo}
+            alt="Logo Blog"
+            loading="lazy"
+            width={50}
+            class="drop-shadow-[0_0_10px_rgba(232,121,249,0.5)]"
+        />
+    </a>
+    <ul class="flex items-center justify-center gap-8">
+        <li title="Self-introduction">
+            <a
+                href="/about"
+                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
+            >
+                About
+            </a>
+        </li>
+        <li title="Software engineering portfolio">
+            <a
+                href="/software-engineering"
+                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
+            >
+                Software Engineering
+            </a>
+        </li>
+        <li title="Writing portfolio">
+            <a
+                href="/writing"
+                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
+            >
+                Writing
+            </a>
+        </li>
+        <li title="Some random rambling about anything">
+            <a
+                href="/notes"
+                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
+            >
+                Notes
+            </a>
+        </li>
+    </ul>
+    <ul class="flex items-center justify-center gap-4">
+        <li
+            class="transition-all hover:text-fuchsia-400 hover:scale-110"
+            title="Go to Twitter"
+        >
+            <a href="https://twitter.com/MAD4869" target="_blank">
+                <FaTwitter />
+            </a>
+        </li>
+        <li
+            class="transition-all hover:text-fuchsia-400 hover:scale-110"
+            title="Go to Github"
+        >
+            <a href="https://github.com/mad4869" target="_blank">
+                <FaGithubAlt />
+            </a>
+        </li>
+        <li
+            class="transition-all hover:text-fuchsia-400 hover:scale-110"
+            title="Go to Wattpad"
+        >
+            <a
+                href="https://www.wattpad.com/user/aconitin_4869"
+                target="_blank"
+            >
+                <SiWattpad />
+            </a>
+        </li>
+        <li
+            class="transition-transform hover:scale-110"
+            title="Go to KaryaKarsa"
+        >
+            <a href="https://karyakarsa.com/aconitin/" target="_blank">
+                <Image
+                    src={logoKK}
+                    alt="Logo KaryaKarsa"
+                    width={10}
+                    height={10}
+                    loading="lazy"
+                />
+            </a>
+        </li>
+        <li class="transition-transform hover:scale-110" title="Go to Kwikku">
+            <a href="https://www.kwikku.com/mad4869" target="_blank">
+                <Image
+                    src={logoKwik}
+                    alt="Logo Kwikku"
+                    width={15}
+                    height={15}
+                    loading="lazy"
+                />
+            </a>
+        </li>
+    </ul>
+</nav>

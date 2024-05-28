@@ -1,0 +1,63 @@
+---
+import "@/styles/globals.css";
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+import type { GetStaticPaths } from "astro";
+
+import Layout from "@/layouts/Layout.astro";
+import type { EngineeringPorto } from "@/types/porto";
+
+export const getStaticPaths = (async () => {
+    const engineeringPortfolios = await getCollection("engineering");
+    const paths = engineeringPortfolios.map((porto) => {
+        return {
+            params: {
+                slug: porto.slug,
+            },
+            props: {
+                porto,
+            },
+        };
+    });
+
+    return paths;
+}) satisfies GetStaticPaths;
+
+type Props = {
+    porto: EngineeringPorto;
+};
+
+const { porto } = Astro.props;
+const { Content } = await porto.render();
+---
+
+<Layout title={`${porto.data.title} | MAD4869`}>
+    <main
+        class="min-h-[calc(100dvh-8rem)] text-fuchsia-400 py-8 px-16 space-y-4"
+    >
+        <section class="flex items-center justify-between">
+            <div>
+                <h1 class="text-3xl font-bold">{porto.data.title}</h1>
+                <h6 class="">{porto.data.description}</h6>
+            </div>
+            <div>
+                {
+                    porto.data.categories?.map((cat: any) => (
+                        <p class="text-xs text-fuchsia-400/50">{cat}</p>
+                    ))
+                }
+            </div>
+        </section>
+        <Image
+            src={porto.data.image}
+            alt={`Hero Image of ${porto.data.title}`}
+            class="max-w-full mx-auto transition-shadow shadow-lg rounded-xl shadow-fuchsia-200/20 hover:shadow-fuchsia-200/40"
+            loading="lazy"
+        />
+        <article
+            class="prose prose-img:rounded-xl text-fuchsia-200 prose-headings:text-fuchsia-400 dark:prose-invert prose-a:text-fuchsia-200 hover:prose-a:text-fuchsia-800"
+        >
+            <Content />
+        </article>
+    </main>
+</Layout>

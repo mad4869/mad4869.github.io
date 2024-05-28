@@ -1,0 +1,21 @@
+---
+import { MdEmail } from "react-icons/md";
+
+const now = new Date();
+const currentYear = now.getFullYear();
+---
+
+<footer
+    class="flex items-center justify-between w-screen px-16 py-4 text-xs border-t border-fuchsia-400 text-fuchsia-400"
+>
+    <p>&copy; {currentYear}. All rights reserved.</p>
+    <span class="flex items-center gap-2">
+        <MdEmail />
+        <a
+            href="mailto:mad4869@gmail.com"
+            target="_blank"
+            title="Reach via email"
+            class="hover:underline">mad4869@gmail.com</a
+        >
+    </span>
+</footer>

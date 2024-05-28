@@ -1,0 +1,30 @@
+---
+import "@/styles/globals.css";
+import { getCollection } from "astro:content";
+
+import Layout from "@/layouts/Layout.astro";
+import CardsCarousel from "@/components/ui/CardCarousel";
+
+const engineeringPortfolios = await getCollection("engineering");
+---
+
+<Layout title="Software Engineering Portfolio | MAD4869">
+    <main
+        class="min-h-[calc(100dvh-8rem)] text-fuchsia-400 py-4 flex items-center px-16 gap-8"
+        transition:animate="fade"
+    >
+        <!-- <div>
+            <div
+                class="px-8 py-px rounded-full bg-fuchsia-800 text-fuchsia-400 w-fit"
+            >
+                <h2 class="text-xl text-center">Portfolio</h2>
+            </div>
+            <h1 class="text-5xl font-bold text-center">Software Engineering</h1>
+        </div>
+        <div
+            class="w-px min-h-[calc(100dvh-10rem)] rounded-full bg-fuchsia-400/10"
+        >
+        </div> -->
+        <CardsCarousel portos={engineeringPortfolios} />
+    </main>
+</Layout>
