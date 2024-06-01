@@ -4,7 +4,7 @@ Hi there 👋
 
 ## My Blog
 
-[mad4869.github.io](https://mad4869.github.io)
+[mad4869.github.io](https://mad4869.github.io/software-engineering)
 
 ## About me
 

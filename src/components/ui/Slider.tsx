@@ -3,11 +3,11 @@ import { useEffect } from "react"
 import Card from "./Card"
 import type { EngineeringPorto, WritingPorto } from "@/types/porto"
 
-type CarouselProps = {
+type SliderProps = {
     portos: EngineeringPorto[] | WritingPorto[]
 }
 
-const Carousel = ({ portos }: CarouselProps) => {
+const Slider = ({ portos }: SliderProps) => {
     useEffect(() => {
         const init = async () => {
             const { Carousel, initTWE } = await import("tw-elements");
@@ -107,4 +107,4 @@ const Carousel = ({ portos }: CarouselProps) => {
     )
 }
 
-export default Carousel
+export default Slider
