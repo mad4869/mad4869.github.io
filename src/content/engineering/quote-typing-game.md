@@ -1,11 +1,12 @@
 ---
 title: Quote Typing Game
 description: A simple typing game built using React, Vite, and Typescript.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2023-11-05
+image: ./assets/quote-typing-game.png
 categories: ['React', 'Web Development']
 repo: https://github.com/mad4869/quote-typing-game
 ---
+
 ## Rules
 
 The player should type as many words as they can within a 60-second timeframe.

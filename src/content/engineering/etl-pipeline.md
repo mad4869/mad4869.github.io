@@ -1,11 +1,12 @@
 ---
 title: ETL Pipeline
 description: A pipeline to manage simple ETL process from various sources.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2024-03-05
+image: ./assets/etl-pipeline.jpg
 categories: ['Pandas', 'Luigi', 'Data Engineering']
 repo: https://github.com/mad4869/etl-pipeline
 ---
+
 ## Background
 
 A data engineer is required to build an ETL pipeline to address data issues for other departments.

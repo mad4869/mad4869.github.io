@@ -1,11 +1,12 @@
 ---
 title: Data Warehouse
 description: A simple data warehouse based on PostgreSQL.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2024-05-12
+image: ./assets/data-warehouse.jpg
 categories: ['Pandas', 'Luigi', 'dbt', 'Data Engineering']
 repo: https://github.com/mad4869/data-warehouse
 ---
+
 ## Background
 
 A company specializing in selling various books, aims to separate their transaction storage from the storage intended for analysis.

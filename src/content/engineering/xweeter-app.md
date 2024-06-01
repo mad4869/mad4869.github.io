@@ -1,11 +1,12 @@
 ---
 title: Xweeter App
 description: A simple social media app built using Vue and Flask.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2024-11-29
+image: ./assets/xweeter-app.png
 categories: ['Vue', 'Flask', 'Web Development']
 repo: https://github.com/mad4869/xweeter-app
 ---
+
 ## Background Scenario
 
 A web developer has been instructed to create a social media platform that resembles Twitter but is simpler and more intuitive.

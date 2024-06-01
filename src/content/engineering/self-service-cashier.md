@@ -1,11 +1,12 @@
 ---
 title: Self-service Cashier
 description: A python project to input orders data and store them inside an SQLite database.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2023-05-17
+image: ./assets/self-service-cashier.jpg
 categories: ['Python', 'Data Engineering']
 repo: https://github.com/mad4869/self-service-cashier
 ---
+
 ## Background Scenario
 
 The owner of a large supermarket in a city in Indonesia has a plan to improve business processes by creating a self-service cashier system with the following objectives:

@@ -1,5 +1,4 @@
 ---
-import "@/styles/globals.css";
 import { Image } from "astro:assets";
 import { getCollection } from "astro:content";
 import type { GetStaticPaths } from "astro";
@@ -38,7 +37,16 @@ const { Content } = await porto.render();
         <section class="flex items-center justify-between">
             <div>
                 <h1 class="text-3xl font-bold">{porto.data.title}</h1>
-                <h6 class="">{porto.data.description}</h6>
+                <h6>{porto.data.description}</h6>
+                <p class="text-xs">
+                    {
+                        porto.data.date.toLocaleDateString("id-ID", {
+                            day: "numeric",
+                            month: "short",
+                            year: "2-digit",
+                        })
+                    }
+                </p>
             </div>
             <div>
                 {
@@ -52,10 +60,9 @@ const { Content } = await porto.render();
             src={porto.data.image}
             alt={`Hero Image of ${porto.data.title}`}
             class="max-w-full mx-auto transition-shadow shadow-lg rounded-xl shadow-fuchsia-200/20 hover:shadow-fuchsia-200/40"
-            loading="lazy"
         />
         <article
-            class="prose prose-img:rounded-xl text-fuchsia-200 prose-headings:text-fuchsia-400 dark:prose-invert prose-a:text-fuchsia-200 hover:prose-a:text-fuchsia-800"
+            class="prose prose-img:rounded-xl text-fuchsia-200 prose-headings:text-fuchsia-400 dark:prose-invert prose-a:text-fuchsia-200 prose-strong:text-fuchsia-200 hover:prose-a:text-fuchsia-800 prose-code:text-fuchsia-400"
         >
             <Content />
         </article>

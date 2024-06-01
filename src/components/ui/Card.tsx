@@ -1,79 +1,32 @@
-import * as React from "react"
+import type { EngineeringPorto, WritingPorto } from "@/types/porto"
 
-import { cn } from "@/lib/utils"
+type CardProps = {
+  porto: EngineeringPorto | WritingPorto
+  isFirstItem: boolean
+}
 
-const Card = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn(
-      "rounded-lg border bg-card text-card-foreground shadow-sm",
-      className
-    )}
-    {...props}
-  />
-))
-Card.displayName = "Card"
+const Card = ({ porto, isFirstItem }: CardProps) => {
+  return (
+    <div
+      className={`relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none ${isFirstItem ? "" : "hidden"}`}
+      {...(isFirstItem ? { 'data-twe-carousel-active': '' } : {})}
+      data-twe-carousel-item
+      style={{ backfaceVisibility: "hidden" }}
+    >
+      <img
+        src={porto.data.image.src}
+        className="block w-full"
+        alt="..."
+        loading={isFirstItem ? "eager" : "lazy"}
+      />
+      <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+        <a href={`/software-engineering/${porto.slug}`}><h5 className="text-xl">{porto.data.title}</h5></a>
+        <p>
+          {porto.data.description}
+        </p>
+      </div>
+    </div>
+  )
+}
 
-const CardHeader = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("flex flex-col space-y-1.5 p-6", className)}
-    {...props}
-  />
-))
-CardHeader.displayName = "CardHeader"
-
-const CardTitle = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLHeadingElement>
->(({ className, ...props }, ref) => (
-  <h3
-    ref={ref}
-    className={cn(
-      "text-2xl font-semibold leading-none tracking-tight",
-      className
-    )}
-    {...props}
-  />
-))
-CardTitle.displayName = "CardTitle"
-
-const CardDescription = React.forwardRef<
-  HTMLParagraphElement,
-  React.HTMLAttributes<HTMLParagraphElement>
->(({ className, ...props }, ref) => (
-  <p
-    ref={ref}
-    className={cn("text-sm text-muted-foreground", className)}
-    {...props}
-  />
-))
-CardDescription.displayName = "CardDescription"
-
-const CardContent = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div ref={ref} className={cn("p-6 pt-0", className)} {...props} />
-))
-CardContent.displayName = "CardContent"
-
-const CardFooter = React.forwardRef<
-  HTMLDivElement,
-  React.HTMLAttributes<HTMLDivElement>
->(({ className, ...props }, ref) => (
-  <div
-    ref={ref}
-    className={cn("flex items-center p-6 pt-0", className)}
-    {...props}
-  />
-))
-CardFooter.displayName = "CardFooter"
-
-export { Card, CardHeader, CardFooter, CardTitle, CardDescription, CardContent }
+export default Card

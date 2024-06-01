@@ -2,6 +2,10 @@
 
 Hi there 👋
 
+## My Blog
+
+[mad4869.github.io](https://mad4869.github.io)
+
 ## About me
 
 I am a graduate of the Dentistry program at Universitas Airlangga, currently transitioning to a career in data and technology with a focus on data engineering and web development.

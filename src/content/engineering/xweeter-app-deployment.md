@@ -1,11 +1,12 @@
 ---
 title: Xweeter App Deployment
 description: A dev-ops process of a simple social media app.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2024-01-10
+image: ./assets/xweeter-app-deployment.png
 categories: ['Nginx', 'Docker', 'Github Actions', 'Dev Ops']
 repo: https://github.com/mad4869/xweeter-app-deployment
 ---
+
 ## Requirements
 
 There are five steps to deploy the app to the server and make it accessible on the web.

@@ -1,11 +1,12 @@
 ---
 title: Todo App
 description: A simple to-do app built using Javascript, Tailwind CSS, and Flask.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2024-07-25
+image: ./assets/todo-app.png
 categories: ['Flask', 'Web Development']
 repo: https://github.com/mad4869/todo-app
 ---
+
 ## Background Scenario
 
 A project manager wants to track the progress of tasks conducted by his subordinates. He decides to ask a developer to create a simple to-do app to oversee their performance.

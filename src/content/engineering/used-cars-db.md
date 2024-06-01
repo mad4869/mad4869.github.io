@@ -1,11 +1,12 @@
 ---
 title: Used Cars Database
 description: A database design project for used cars e-commerce.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2024-05-17
+image: ./assets/used-cars-db.webp
 categories: ['SQL', 'Data Engineering']
 repo: https://github.com/mad4869/used-cars-db
 ---
+
 ## Background
 
 On this used car website, users who register as sellers can create advertisements offering used cars for sale. On the other hand, users who register as buyers can search for products based on several categories.

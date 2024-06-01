@@ -1,11 +1,12 @@
 ---
 title: Todo App Docker
 description: A project to containerize a Flask-based simple to-do app using Docker.
-date: 2024-01-01
-image: ./assets/overtime-system.png
+date: 2023-07-25
+image: ./assets/todo-app-docker.png
 categories: ['Docker', 'Dev Ops']
 repo: https://github.com/mad4869/todo-app-docker
 ---
+
 ## Background Scenario
 
 Imagine yourself as a software engineer who needs to deploy a Flask-based to-do web application and intends to utilize Docker for building an isolated container for the web app.

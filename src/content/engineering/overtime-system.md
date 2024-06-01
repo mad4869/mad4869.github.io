@@ -1,11 +1,12 @@
 ---
 title: Overtime Management System
 description: A full-stack project to manage overtime compensation for workers. Built using Next.js.
-date: 2024-01-01
+date: 2024-02-15
 image: ./assets/overtime-system.png
 categories: ['Next', 'React', 'Web Development']
 repo: https://github.com/mad4869/overtime-system
 ---
+
 ## Site
 
 [overtimesystem.vercel.app](https://overtimesystem.vercel.app)
