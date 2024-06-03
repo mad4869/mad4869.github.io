@@ -1,8 +1,8 @@
 ---
 title: Xweeter App
 description: A simple social media app built using Vue and Flask.
-date: 2024-11-29
-image: ./assets/xweeter-app.png
+date: 2023-11-29
+image: ./assets/xweeter-app/xweeter-app.png
 categories: ['Vue', 'Flask', 'Web Development']
 repo: https://github.com/mad4869/xweeter-app
 ---
@@ -26,7 +26,7 @@ The social media app should have the following features:
 
 ## Program Scheme
 
-![A flowchart image that explains how the program runs](https://i.ibb.co/Lgsw3s8/user-journey-flowchart.jpg)
+![A flowchart image that explains how the program runs](./assets/xweeter-app/user-journey-flowchart.jpg)
 
 ### START
 
@@ -43,7 +43,7 @@ The social media app should have the following features:
 ## ERD
 
 This app utilizes __PostgreSQL__ as the database service. The structure of the schema in the database is as follows:
-![Entity Relationship Diagram](https://i.ibb.co/kDxhStx/erd.png)
+![Entity Relationship Diagram](./assets/xweeter-app/erd.png)
 
 ## Installation
 
@@ -158,50 +158,50 @@ The frontend is built using __Vite__ and utilizes __Vue__ as the Javascript/Type
 
 ### 1. User authentication
 
-![User login](https://i.ibb.co/w7yDwwD/login.png)
-![User login successfully](https://i.ibb.co/wdpj8rf/login-success.png)
+![User login](./assets/xweeter-app/login.png)
+![User login successfully](./assets/xweeter-app/login_success.png)
 
 ### 2. Send a new tweet
 
-![Send a tweet](https://i.ibb.co/5xqDTFn/new-xweet.png)
-![Send a tweet from modal](https://i.ibb.co/j6203pp/new-xweet-modal.png)
-![Send a tweet successfully](https://i.ibb.co/7KyB6CQ/new-xweet-successful.png)
+![Send a tweet](./assets/xweeter-app/new_xweet.png)
+![Send a tweet from modal](./assets/xweeter-app/new_xweet_modal.png)
+![Send a tweet successfully](./assets/xweeter-app/new_xweet_successful.png)
 
 ### 3. Edit a tweet
 
-![Edit a tweet](https://i.ibb.co/rkdcq1h/edit-xweet.png)
-![Show the tweet editor](https://i.ibb.co/GJqG1xW/edit-xweet-editor.png)
-![Edit a tweet successfully](https://i.ibb.co/vHB9xzL/edit-xweet-success.png)
-![The tweet that has been edited](https://i.ibb.co/hZ1X0nT/edited-xweet.png)
+![Edit a tweet](./assets/xweeter-app/edit_xweet.png)
+![Show the tweet editor](./assets/xweeter-app/edit_xweet_editor.png)
+![Edit a tweet successfully](./assets/xweeter-app/edit_xweet_success.png)
+![The tweet that has been edited](./assets/xweeter-app/edited_xweet.png)
 
 ### 4. Delete a tweet
 
-![Delete a tweet](https://i.ibb.co/yVXc1ck/delete-xweet.png)
-![Show the delete modal](https://i.ibb.co/C9Zt6SM/delete-xweet-modal.png)
-![Delete a task successfully](https://i.ibb.co/TWH6Tzg/delete-xweet-success.png)
+![Delete a tweet](./assets/xweeter-app/delete_xweet.png)
+![Show the delete modal](./assets/xweeter-app/delete_xweet_modal.png)
+![Delete a task successfully](./assets/xweeter-app/delete_xweet_success.png)
 
 ### 5. Upload an image and attach it to a tweet
 
-![Send a tweet with picture](https://i.ibb.co/K5yBnPX/upload-image.png)
-![Send a tweet with picture successfully](https://i.ibb.co/qRWt89T/upload-image-success.png)
+![Send a tweet with picture](./assets/xweeter-app/upload_image.png)
+![Send a tweet with picture successfully](./assets/xweeter-app/upload_image_success.png)
 
 ### 6. Like a tweet and view the count of the likes
 
-![Like a tweet](https://i.ibb.co/BfdNDwP/like-xweet.png)
-![Like a tweet successfully and view the count increases](https://i.ibb.co/MfHLFWs/like-xweet-success.png)
+![Like a tweet](./assets/xweeter-app/like_xweet.png)
+![Like a tweet successfully and view the count increases](./assets/xweeter-app/like_xweet_success.png)
 
 ### 7. Leaderboard for most active users
 
-![Leaderboard](https://i.ibb.co/3Bpkfrj/leaderboard.png)
+![Leaderboard](./assets/xweeter-app/leaderboard.png)
 
 ### 8. Admin page for user with admin role
 
-![Admin page](https://i.ibb.co/DM0xSPM/admin-page.png)
+![Admin page](./assets/xweeter-app/admin_page.png)
 
 ### 9. Retrieve more tweets when necessary
 
-![More tweets](https://i.ibb.co/RjJxv6W/more-xweet.png)
-![More tweets loaded](https://i.ibb.co/mJ67svL/more-xweet-success.png)
+![More tweets](./assets/xweeter-app/more_xweet.png)
+![More tweets loaded](./assets/xweeter-app/more_xweet_success.png)
 
 ## Conclusion
 

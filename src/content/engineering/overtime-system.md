@@ -2,7 +2,7 @@
 title: Overtime Management System
 description: A full-stack project to manage overtime compensation for workers. Built using Next.js.
 date: 2024-02-15
-image: ./assets/overtime-system.png
+image: ./assets/overtime-system/overtime-system.png
 categories: ['Next', 'React', 'Web Development']
 repo: https://github.com/mad4869/overtime-system
 ---
@@ -25,46 +25,46 @@ repo: https://github.com/mad4869/overtime-system
 
 #### Login Page
 
-![Login Page](https://i.ibb.co/XzPFXCf/Screenshot-2024-02-02-003138.png)
+![Login Page](./assets/overtime-system/login.png)
 
 #### Navigation for Users
 
-![Navigation for Users](https://i.ibb.co/rw7xH08/Screenshot-2024-02-03-163123.png)
+![Navigation for Users](./assets/overtime-system/nav_users.png)
 
 #### Navigation for Admin
 
-![Navigation for Admin](https://i.ibb.co/xGhYL7G/Screenshot-2024-02-03-190340.png)
+![Navigation for Admin](./assets/overtime-system/nav_admins.png)
 
 ### Users Managing Working Items
 
 #### Submitting a New Working Item
 
-![Submitting a New Working Item](https://i.ibb.co/tQnmRWc/Screenshot-2024-02-01-225123.png)
-![Submitting a New Working Item](https://i.ibb.co/DkYtF9y/Screenshot-2024-02-01-225215.png)
+![Submitting a New Working Item](./assets/overtime-system/new_working_item.png)
+![Submitting a New Working Item](./assets/overtime-system/new_working_item_.png)
 
 #### Updating an Existing Working Item
 
-![Updating an Existing Working Item](https://i.ibb.co/Nrc3Mdg/Screenshot-2024-02-01-225317.png)
-![Updating an Existing Working Item](https://i.ibb.co/zZBcXQr/Screenshot-2024-02-01-225330.png)
+![Updating an Existing Working Item](./assets/overtime-system/update_working_item.png)
+![Updating an Existing Working Item](./assets/overtime-system/update_working_item_.png)
 
 #### Deleting a Working Item
 
-![Deleting a Working Item](https://i.ibb.co/2ZRSDN1/Screenshot-2024-02-01-225348.png)
-![Deleting a Working Item](https://i.ibb.co/2Z6cQRx/Screenshot-2024-02-01-225406.png)
+![Deleting a Working Item](./assets/overtime-system/delete_working_item.png)
+![Deleting a Working Item](./assets/overtime-system/delete_working_item_.png)
 
 ### Users Managing the List of Working Items
 
-![Users Managing the List of Working Items](https://i.ibb.co/Kj9KBrQ/Screenshot-2024-02-01-225608.png)
-![Users Managing the List of Working Items](https://i.ibb.co/KbwLvKz/Screenshot-2024-02-01-225621.png)
+![Users Managing the List of Working Items](./assets/overtime-system/working_item_list.png)
+![Users Managing the List of Working Items](./assets/overtime-system/working_item_list_.png)
 
 ### Admin Reviewing and Approving Working Items from Users
 
-![Admin Reviewing and Approving Working Items from Users](https://i.ibb.co/XZdXh58/Screenshot-2024-02-01-233505.png)
-![Admin Reviewing and Approving Working Items from Users](https://i.ibb.co/Rb9m9f3/Screenshot-2024-02-01-233605.png)
+![Admin Reviewing and Approving Working Items from Users](./assets/overtime-system/approve_working_item.png)
+![Admin Reviewing and Approving Working Items from Users](./assets/overtime-system/approve_working_item_.png)
 
 ### Admin Exporting List of Working Items to PDF and Excel
 
-![Admin Exporting List of Working Items to PDF and Excel](https://i.ibb.co/5c9hGQx/Screenshot-2024-02-01-233805.png)
+![Admin Exporting List of Working Items to PDF and Excel](./assets/overtime-system/recap_working_item.png)
 
 ## Acknowledgement
 

@@ -2,7 +2,7 @@
 title: Data Warehouse
 description: A simple data warehouse based on PostgreSQL.
 date: 2024-05-12
-image: ./assets/data-warehouse.jpg
+image: ./assets/data-warehouse/data-warehouse.png
 categories: ['Pandas', 'Luigi', 'dbt', 'Data Engineering']
 repo: https://github.com/mad4869/data-warehouse
 ---
@@ -72,7 +72,7 @@ Based on the given requirements, the business process selected for this project 
 
 #### Data warehouse diagram
 
-<!-- ![diagram of data warehouse](docs/ERD.jpg) -->
+![diagram of data warehouse](./assets/data-warehouse/ERD.jpg)
 
 #### Slowly Changing Dimension (SCD) strategy
 
@@ -387,15 +387,15 @@ echo "========== End of dbt with Luigi Orchestration Process =========="
 
 Scenario 1 validates that the pipeline runs as expected, executing data extraction, loading, and transformation without encountering errors.
 
-<!-- ![Luigi successfully executed the ELT process](docs/luigi.png) -->
+![Luigi successfully executed the ELT process](./assets/data-warehouse/luigi.png)
 
 It also verifies the successful construction of staging data, snapshot tables, dimension tables, and fact tables within the data warehouse.
 
-<!-- ![Staging data inside the staging schema](docs/dwh_staging.png) -->
+![Staging data inside the staging schema](./assets/data-warehouse/dwh_staging.png)
 
-<!-- ![Snapshot data inside the snapshot schema](docs/dwh_snapshot.png) -->
+![Snapshot data inside the snapshot schema](./assets/data-warehouse/dwh_snapshot.png)
 
-<!-- ![Dimension and fact data inside the final schema](docs/dwh_final.png) -->
+![Dimension and fact data inside the final schema](./assets/data-warehouse/dwh_final.png)
 
 #### Scenario 2: SCD strategy
 
@@ -403,11 +403,11 @@ Scenario 2 ensures the effective implementation of the SCD strategy in the data 
 
 Before updating the record:
 
-<!-- ![The state of snapshot table before updating the record](docs/snapshot-before.png) -->
+![The state of snapshot table before updating the record](./assets/data-warehouse/snapshot-before.png)
 
 After updating the record:
 
-<!-- ![The state of snapshot table after updating the record](docs/snapshot-after.png) -->
+![The state of snapshot table after updating the record](./assets/data-warehouse/snapshot-after.png)
 
 #### Scenario 3: New data
 
@@ -415,11 +415,11 @@ Scenario 3 validates the ability of the data pipeline to handle new data from th
 
 Before inserting new data:
 
-<!-- ![The state of the table before inserting new data](docs/new-data-before.png) -->
+![The state of the table before inserting new data](./assets/data-warehouse/new-data-before.png)
 
 After inserting new data:
 
-<!-- ![The state of the table after inserting new data](docs/new-data-after.png) -->
+![The state of the table after inserting new data](./assets/data-warehouse/new-data-after.png)
 
 ## Conclusion
 

@@ -2,7 +2,7 @@
 title: ETL Pipeline
 description: A pipeline to manage simple ETL process from various sources.
 date: 2024-03-05
-image: ./assets/etl-pipeline.jpg
+image: ./assets/etl-pipeline/etl-pipeline.png
 categories: ['Pandas', 'Luigi', 'Data Engineering']
 repo: https://github.com/mad4869/etl-pipeline
 ---
@@ -45,7 +45,7 @@ The pipeline follows an ETL procedure:
 - Transform
 - Load
 
-<!-- ![ETL Pipeline Design](./docs/etl-pipeline-design.jpg) -->
+![ETL Pipeline Design](./assets/etl-pipeline/etl-pipeline-design.jpg)
 
 During the __Extraction__ phase, data is extracted from three available sources: a CSV file, a PostgreSQL database, and a website. Data from the CSV file and the database is directly extracted using `pandas` methods for reading CSV files and database queries, respectively. Data from the website is obtained through web scraping using a combination of `requests` and `Beautiful Soup` libraries. All the data is then converted into `pandas` DataFrames for further processing.
 
@@ -126,7 +126,7 @@ class ExtractSalesDataFromDB(ForceableTask):
 
 Extracting data from a website is accomplished by scraping the __Detikinet__ website (inet.detik.com). Detik was selected for convenience reason and because their policy allows the use of their content for non-commercial purposes.
 
-<!-- ![Detik's Copyright Statement](/docs/detik-copyright-statement.png) -->
+![Detik's Copyright Statement](./assets/etl-pipeline/detik-copyright-statement.png)
 
 Source: [detik.com](https://www.detik.com/copyright)
 
@@ -537,19 +537,19 @@ The crontab for running the shell script regularly:
 
 Scenario 1 focuses on ensuring the pipeline runs without any issue and the data is successfully loaded to their respective tables within the database.
 
-<!-- ![Luigi Execution Summary](/docs/luigi.png) -->
+![Luigi Execution Summary](./assets/etl-pipeline/luigi.png)
 
 Products table:
 
-<!-- ![Products Table in the Database](/docs/scenario-1-products.png) -->
+![Products Table in the Database](./assets/etl-pipeline/scenario-1-products.png)
 
 Sales table:
 
-<!-- ![Sales Table in the Database](/docs/scenario-1-sales.png) -->
+![Sales Table in the Database](./assets/etl-pipeline/scenario-1-sales.png)
 
 Web table:
 
-<!-- ![Web Table in the Database](/docs/scenario-1-web.png) -->
+![Web Table in the Database](./assets/etl-pipeline/scenario-1-web.png)
 
 #### Scenario 2
 
@@ -557,11 +557,11 @@ Scenario 2 verifies that the pipeline executes regularly within the scheduler an
 
 The state of the database before inserting a new record:
 
-<!-- ![Database before inserting a new record](/docs/scenario-2-a.png) -->
+![Database before inserting a new record](./assets/etl-pipeline/scenario-2-a.png)
 
 The state of the database after inserting a new record:
 
-<!-- ![Database after inserting a new record](/docs/scenario-2-b.png) -->
+![Database after inserting a new record](./assets/etl-pipeline/scenario-2-b.png)
 
 ## Conclusion
 

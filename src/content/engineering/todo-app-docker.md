@@ -2,7 +2,7 @@
 title: Todo App Docker
 description: A project to containerize a Flask-based simple to-do app using Docker.
 date: 2023-07-25
-image: ./assets/todo-app-docker.png
+image: ./assets/todo-app-docker/todo-app-docker.png
 categories: ['Docker', 'Dev Ops']
 repo: https://github.com/mad4869/todo-app-docker
 ---
@@ -64,7 +64,7 @@ docker build --no-cache -t todo-app:latest .
 
 This command will build the Docker image based on the instructions provided in the Dockerfile and the context of the current directory.
 
-<!-- ![Build a Docker image with Dockerfile](docs/docker-build.png) -->
+![Build a Docker image with Dockerfile](./assets/todo-app-docker/docker-build.png)
 
 This custom base image can also be pulled from the Docker Hub registry using `docker pull` command:
 
@@ -72,7 +72,7 @@ This custom base image can also be pulled from the Docker Hub registry using `do
 docker pull mad4869/todo-app:latest
 ```
 
-<!-- ![Pull a Docker image from Docker Hub](docs/docker-pull-todo.png) -->
+![Pull a Docker image from Docker Hub](./assets/todo-app-docker/docker-pull-todo.png)
 
 ### 2. Pull the Postgres Image
 
@@ -82,7 +82,7 @@ Since the web app requires a database connection, we will be using the PostgreSQ
 docker pull postgres:latest
 ```
 
-<!-- ![Pull a Docker image from Docker Hub](docs/docker-pull-postgres.png) -->
+![Pull a Docker image from Docker Hub](./assets/todo-app-docker/docker-pull-postgres.png)
 
 ### 3. Run the Containers
 
@@ -126,14 +126,14 @@ docker exec todo-app-container flask db migrate
 docker exec todo-app-container flask db upgrade
 ```
 
-<!-- ![Run docker containers](docs/docker-run.png) -->
+![Run docker containers](./assets/todo-app-docker/docker-run.png)
 
 And now, the Flask app will run inside the `todo-app-container` and establish a connection to the `postgres-container` as its database.
 
-<!-- ![Accessing the web app in the port 5000](docs/browser.png) -->
+![Accessing the web app in the port 5000](./assets/todo-app-docker/browser.png)
 _The Flask to-do app in the port 5000_
 
-<!-- ![Checking connection to Postgres database in the port 5432 via dbeaver](docs/dbeaver.png) -->
+![Checking connection to Postgres database in the port 5432 via dbeaver](./assets/todo-app-docker/dbeaver.png)
 _Postgres in the port 5432, inspected using dbeaver_
 
 ### 4. Run the Containers with Docker-Compose
@@ -208,7 +208,7 @@ If all the components are ready, we run the `docker compose` command:
 docker compose up -d
 ```
 
-<!-- ![Running containers using docker compose](docs/docker-compose.png) -->
+![Running containers using docker compose](./assets/todo-app-docker/docker-compose.png)
 
 If there are no issues during the running of the containers, we run the `flask db` commands inside the Flask app container:
 
@@ -244,7 +244,7 @@ crontab -e
 0 0 * * * /home/user/path/to/backup.sh
 ```
 
-<!-- ![Setting up cron job to backup database data](docs/crontab.png) -->
+![Setting up cron job to backup database data](./assets/todo-app-docker/crontab.png)
 _cron job runs once a day every midnight_
 
 In case of emergency where data needs to be restored, the backup data can be inserted into a running container and be executed to restore the missing data.

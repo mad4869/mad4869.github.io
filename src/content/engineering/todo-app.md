@@ -1,8 +1,8 @@
 ---
 title: Todo App
 description: A simple to-do app built using Javascript, Tailwind CSS, and Flask.
-date: 2024-07-25
-image: ./assets/todo-app.png
+date: 2023-07-25
+image: ./assets/todo-app/todo-app.png
 categories: ['Flask', 'Web Development']
 repo: https://github.com/mad4869/todo-app
 ---
@@ -24,7 +24,7 @@ The to-do app should have the following features:
 
 ## Program Scheme
 
-<!-- ![A flowchart image that explains how the program runs](docs/user-journey-flowchart.jpg) -->
+![A flowchart image that explains how the program runs](./assets/todo-app/user-journey-flowchart.jpg)
 
 ### START
 
@@ -44,7 +44,7 @@ The to-do app should have the following features:
 ## ERD
 
 This app utilizes __PostgreSQL__ as the database service. The structure of the schema in the database is as follows:
-<!-- ![Entity Relationship Diagram](docs/erd.png) -->
+![Entity Relationship Diagram](./assets/todo-app/erd.png)
 
 ## Installation
 
@@ -151,37 +151,37 @@ This app utilizes __webpack__ to build the assets and insert them into the `stat
 
 ### 1. User authentication
 
-<!-- ![User login](docs/test/login-1.png) -->
-<!-- ![User login successfully](docs/test/login-2.png) -->
+![User login](./assets/todo-app/login-1.png)
+![User login successfully](./assets/todo-app/login-2.png)
 
 ### 2. Add a project and a task
 
-<!-- ![Add a project](docs/test/add-project-1.png) -->
-<!-- ![Add a task](docs/test/add-task-1.png) -->
-<!-- ![Add a task successfully](docs/test/add-task-2.png) -->
+![Add a project](./assets/todo-app/add-project-1.png)
+![Add a task](./assets/todo-app/add-task-1.png)
+![Add a task successfully](./assets/todo-app/add-task-2.png)
 
 ### 3. Edit a project and a task
 
-<!-- ![Edit a task](docs/test/edit-task-1.png) -->
-<!-- ![Edit a task successfully](docs/test/edit-task-2.png) -->
-<!-- ![Edit a project](docs/test/edit-project-1.png) -->
-<!-- ![Edit a project successfully](docs/test/edit-project-2.png) -->
+![Edit a task](./assets/todo-app/edit-task-1.png)
+![Edit a task successfully](./assets/todo-app/edit-task-2.png)
+![Edit a project](./assets/todo-app/edit-project-1.png)
+![Edit a project successfully](./assets/todo-app/edit-project-2.png)
 
 ### 4. Delete a project and a task
 
-<!-- ![Delete a task](docs/test/delete-task-1.png) -->
-<!-- ![Delete a task successfully](docs/test/delete-task-2.png) -->
-<!-- ![Delete a project](docs/test/delete-project-1.png) -->
-<!-- ![Delete a project successfully](docs/test/delete-project-2.png) -->
+![Delete a task](./assets/todo-app/delete-task-1.png)
+![Delete a task successfully](./assets/todo-app/delete-task-2.png)
+![Delete a project](./assets/todo-app/delete-project-1.png)
+![Delete a project successfully](./assets/todo-app/delete-project-2.png)
 
 ### 5. Mark a task as finished/done
 
-<!-- ![Mark a task as finished](docs/test/mark-as-done.png) -->
+![Mark a task as finished](./assets/todo-app/mark-as-done.png)
 
 ### 6. Filter tasks by project
 
-<!-- ![Filter tasks by project](docs/test/filter-1.png) -->
-<!-- ![Filter tasks by project](docs/test/filter-2.png) -->
+![Filter tasks by project](./assets/todo-app/filter-1.png)
+![Filter tasks by project](./assets/todo-app/filter-2.png)
 
 ## Conclusion
 

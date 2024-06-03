@@ -2,7 +2,7 @@
 title: Quote Typing Game
 description: A simple typing game built using React, Vite, and Typescript.
 date: 2023-11-05
-image: ./assets/quote-typing-game.png
+image: ./assets/quote-typing-game/quote-typing-game.png
 categories: ['React', 'Web Development']
 repo: https://github.com/mad4869/quote-typing-game
 ---
@@ -13,7 +13,7 @@ The player should type as many words as they can within a 60-second timeframe.
 
 ## Demo
 
-<!-- ![Welcome screen](./docs/initial.png) -->
+![Welcome screen](./assets/quote-typing-game/initial.png)
 
 ## API
 
@@ -33,18 +33,18 @@ The typing game should have the following features:
 
 ### 1. Target text, target word indicator, and the countdown
 
-<!-- ![Countdown safe indicator](./docs/safe-count.png) -->
-<!-- ![Countdown caution indicator](./docs/caution-count.png) -->
-<!-- ![Countdown danger indicator](./docs/danger-count.png) -->
+![Countdown safe indicator](./assets/quote-typing-game/safe-count.png)
+![Countdown caution indicator](./assets/quote-typing-game/caution-count.png)
+![Countdown danger indicator](./assets/quote-typing-game/danger-count.png)
 
 ### 2. Error alert
 
-<!-- ![No alert when there is no typo](./docs/not-typo.png) -->
-<!-- ![Error alert when a typo is detected](./docs/typo.png) -->
+![No alert when there is no typo](./assets/quote-typing-game/not-typo.png)
+![Error alert when a typo is detected](./assets/quote-typing-game/typo.png)
 
 ### 3. Final score review
 
-<!-- ![Final score review](./docs/review.png) -->
+![Final score review](./assets/quote-typing-game/review.png)
 
 ## Conclusion/Future Work
 

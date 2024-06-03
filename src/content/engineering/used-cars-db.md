@@ -1,8 +1,8 @@
 ---
 title: Used Cars Database
 description: A database design project for used cars e-commerce.
-date: 2024-05-17
-image: ./assets/used-cars-db.webp
+date: 2023-05-17
+image: ./assets/used-cars-db/used-cars-db.png
 categories: ['SQL', 'Data Engineering']
 repo: https://github.com/mad4869/used-cars-db
 ---
@@ -31,37 +31,37 @@ On this used car website, users who register as sellers can create advertisement
 
 ### 1. Mission Statement
 
-<!-- ![Mission statement](docs/design-process/mission_statement.jpg) -->
+![Mission statement](./assets/used-cars-db/mission_statement.jpg)
 
 ### 2. Creating Table Structures
 
 - Determine the objects
 
-<!-- ![Table structures](docs/design-process/creating_table_structures.jpg) -->
+![Table structures](./assets/used-cars-db/creating_table_structures.jpg)
 
 - Creating Field Name and Data Type
 
-<!-- ![Field name and data type](docs/design-process/creating_field_name_data_type.jpg) -->
+![Field name and data type](./assets/used-cars-db/creating_field_name_data_type.jpg)
 
 - Determine Candidate Keys
 
-<!-- ![Candidate keys](docs/design-process/determine_candidate_keys.jpg) -->
+![Candidate keys](./assets/used-cars-db/determine_candidate_keys.jpg)
 
 - Determine Primary Keys
 
-<!-- ![Primary keys](docs/design-process/determine_primary_keys.jpg) -->
+![Primary keys](./assets/used-cars-db/determine_primary_keys.jpg)
 
 ### 3. Determine Table Relationships
 
-<!-- ![Table relationship](docs/design-process/determine_table_relationships.jpg) -->
+![Table relationship](./assets/used-cars-db/determine_table_relationships.jpg)
 
 ### 4. Determine Business Rule
 
-<!-- ![Business rule](docs/design-process/determine_business_rule.jpg) -->
+![Business rule](./assets/used-cars-db/determine_business_rule.jpg)
 
 ### 5. Entity Relationship Diagram
 
-<!-- ![Entity Relationship Diagram](docs/design-process/ERD_design.jpg) -->
+![Entity Relationship Diagram](./assets/used-cars-db/ERD_design.jpg)
 
 ## Implementing the Design
 
@@ -414,7 +414,7 @@ SELECT
 ```
 
 Output:
-<!-- ![Output transactional query 1](docs/queries/transactional-query-1.png) -->
+![Output transactional query 1](./assets/used-cars-db/transactional-query-1.png)
 
 ### 2. Added one new product bid record
 
@@ -428,9 +428,9 @@ INSERT INTO
 
 Output:
 
-<!-- ![Output transactional query 2](docs/queries/transactional-query-2a.png) -->
+![Output transactional query 2](./assets/used-cars-db/transactional-query-2a.png)
 
-<!-- ![Output transactional query 2](docs/queries/transactional-query-2b.png) -->
+![Output transactional query 2](./assets/used-cars-db/transactional-query-2b.png)
 
 ### 3. View all cars sold from a single account, sorted by most recent transactions
 
@@ -456,7 +456,7 @@ SELECT
 ```
 
 Output:
-<!-- ![Output transactional query 3](docs/queries/transactional-query-3.png) -->
+![Output transactional query 3](./assets/used-cars-db/transactional-query-3.png)
 
 ### 4. Search for the cheapest used cars based on keywords
 
@@ -482,7 +482,7 @@ SELECT
 ```
 
 Output:
-<!-- ![Output transactional query 4](docs/queries/transactional-query-4.png) -->
+![Output transactional query 4](./assets/used-cars-db/transactional-query-4.png)
 
 ### 5. Find the nearest used car based on a city id
 
@@ -544,7 +544,7 @@ ORDER BY
 ```
 
 Output:
-<!-- ![Output transactional query 5](docs/queries/transactional-query-5.png) -->
+![Output transactional query 5](./assets/used-cars-db/transactional-query-5.png)
 
 ## Analytical Query
 
@@ -572,7 +572,7 @@ SELECT
 ```
 
 Output:
-<!-- ![Output analytical query 1](docs/queries/analytical-query-1.png) -->
+![Output analytical query 1](./assets/used-cars-db/analytical-query-1.png)
 
 ### 2. Compare car prices based on the average price per city
 
@@ -603,7 +603,7 @@ SELECT
 ```
 
 Output:
-<!-- ![Output analytical query 2](docs/queries/analytical-query-2.png) -->
+![Output analytical query 2](./assets/used-cars-db/analytical-query-2.png)
 
 ### 3. From the car model's offers, compare the date the user made a bid with the date of the next bid and the respective bid prices
 
@@ -632,7 +632,7 @@ ORDER BY
 ```
 
 Output:
-<!-- ![Output analytical query 3](docs/queries/analytical-query-3.png) -->
+![Output analytical query 3](./assets/used-cars-db/analytical-query-3.png)
 
 ### 4. Comparing the percentage difference between the average car price by model and the average bid price offered by customers in the last 6 months
 
@@ -660,7 +660,7 @@ GROUP BY
 ```
 
 Output:
-<!-- ![Output analytical query 4](docs/queries/analytical-query-4.png) -->
+![Output analytical query 4](./assets/used-cars-db/analytical-query-4.png)
 
 ### 5. Create a window function for the average bid price of a car brand and model for the last 6 months
 
@@ -698,7 +698,7 @@ WITH bids_yaris AS (
 ```
 
 Output:
-<!-- ![Output analytical query 5](docs/queries/analytical-query-5.png) -->
+![Output analytical query 5](./assets/used-cars-db/analytical-query-5.png)
 
 ## Conclusion
 

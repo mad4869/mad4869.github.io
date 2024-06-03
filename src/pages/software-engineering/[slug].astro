@@ -38,15 +38,26 @@ const { Content } = await porto.render();
             <div>
                 <h1 class="text-3xl font-bold">{porto.data.title}</h1>
                 <h6>{porto.data.description}</h6>
-                <p class="text-xs">
-                    {
-                        porto.data.date.toLocaleDateString("id-ID", {
-                            day: "numeric",
-                            month: "short",
-                            year: "2-digit",
-                        })
-                    }
-                </p>
+                <span class="text-xs flex gap-2">
+                    <a
+                        href={porto.data.repo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline hover:text-fuchsia-200/50 transition-colors"
+                        title={`View ${porto.data.title} on GitHub`}
+                        >{porto.data.repo.replace("https://", "")}</a
+                    >
+                    <p>|</p>
+                    <p>
+                        {
+                            porto.data.date.toLocaleDateString("id-ID", {
+                                day: "numeric",
+                                month: "short",
+                                year: "2-digit",
+                            })
+                        }
+                    </p>
+                </span>
             </div>
             <div>
                 {

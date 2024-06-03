@@ -2,7 +2,7 @@
 title: Self-service Cashier
 description: A python project to input orders data and store them inside an SQLite database.
 date: 2023-05-17
-image: ./assets/self-service-cashier.jpg
+image: ./assets/self-service-cashier/self-service-cashier.png
 categories: ['Python', 'Data Engineering']
 repo: https://github.com/mad4869/self-service-cashier
 ---
@@ -28,7 +28,7 @@ The Self-service Cashier program requires the following features:
 
 ## Program Scheme
 
-<!-- ![A flowchart image that explains how the program runs](/docs/flowchart.jpg) -->
+![A flowchart image that explains how the program runs](./assets/self-service-cashier/flowchart.jpg)
 
 ### START
 
@@ -543,21 +543,21 @@ The customer used the `add_item()` function to add two new items. The items adde
 2. Item Name: Toothpaste, Qty: 3, Price: 15,000
 
 Test case results:
-<!-- ![Test case 1](docs/test/test_case_1.png) -->
+![Test case 1](./assets/self-service-cashier/test_case_1.png)
 
 ### Test Case 2
 
 The customer used the `delete_item()` function to remove an incorrect item from the purchase. The item they wanted to delete is __Toothpaste.__
 
 Test case results:
-<!-- ![Test case 2](docs/test/test_case_2.png) -->
+![Test case 2](./assets/self-service-cashier/test_case_2.png)
 
 ### Test Case 3
 
 The customer used the `reset_transaction()` function to delete all the items they added because they entered the wrong items they wanted to purchase.
 
 Test case results:
-<!-- ![Test case 3](docs/test/test_case_3.png) -->
+![Test case 3](./assets/self-service-cashier/test_case_3.png)
 
 ### Test Case 4
 
@@ -566,13 +566,13 @@ After the customer has finished adding items back, they want to calculate the to
 Test case results:
 
 1. Input different items
-<!-- ![Test case 4](docs/test/test_case_4a.png) -->
+![Test case 4](./assets/self-service-cashier/test_case_4a.png)
 2. Check order
-<!-- ![Test case 4](docs/test/test_case_4b.png) -->
+![Test case 4](./assets/self-service-cashier/test_case_4b.png)
 3. Check out
-<!-- ![Test case 4](docs/test/test_case_4c.png) -->
+![Test case 4](./assets/self-service-cashier/test_case_4c.png)
 4. Data successfully inserted into the database
-<!-- ![Test case 4](docs/test/test_case_4d.png) -->
+![Test case 4](./assets/self-service-cashier/test_case_4d.png)
 The table can be viewed using `select_table`.
 
 ```py

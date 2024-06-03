@@ -2,7 +2,7 @@
 title: Xweeter App Deployment
 description: A dev-ops process of a simple social media app.
 date: 2024-01-10
-image: ./assets/xweeter-app-deployment.png
+image: ./assets/xweeter-app-deployment/xweeter-app-deployment.png
 categories: ['Nginx', 'Docker', 'Github Actions', 'Dev Ops']
 repo: https://github.com/mad4869/xweeter-app-deployment
 ---
@@ -50,7 +50,7 @@ sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-<!-- Source: [Docker documentation](https://docs.docker.com/engine/install/ubuntu/) -->
+Source: [Docker documentation](https://docs.docker.com/engine/install/ubuntu/)
 
 #### Installing Nginx
 
@@ -176,7 +176,7 @@ In this project, I am using GitHub Actions to automate the CI/CD process.
 
 First, we need to protect the `main` branch of the repository. This ensures that the merging process will only be executed if a pull request from a collaborator has been approved.
 
-<!-- ![setting to protect main branch](docs/branch-protection.png) -->
+![setting to protect main branch](./assets/xweeter-app-deployment/branch-protection.png)
 
 After that, we can proceed to build the CI/CD pipeline. Within the `.github/workflows` directory, we need to create a __.yml__ file for both CI and CD processes.
 
@@ -231,7 +231,7 @@ jobs:
 
 In the CI process, the operations run inside an Ubuntu runner provided by the GitHub. For the testing phase, __Selenium__ and __pytest__ are utilized. The process starts once a pull request is submitted.
 
-<!-- ![CI process](docs/ci.png) -->
+![CI process](./assets/xweeter-app-deployment/ci.png)
 
 #### CD.yml
 
@@ -325,15 +325,15 @@ In the CD process, there are two main tasks to accomplish:
 
 For the first task, the process runs inside an Ubuntu runner provided by GitHub, just like the CI process. Meanwhile, for the second task, the process runs inside a self-hosted runner, which is an Ubuntu virtual machine already connected to GitHub.
 
-<!-- ![self-hosted runner already connected to GitHub](docs/self-hosted-runner.png) -->
+![self-hosted runner already connected to GitHub](./assets/xweeter-app-deployment/self-hosted-runner.png)
 
 The process starts once there is a push to the `main` branch.
 
-<!-- ![CD process](docs/cd.png) -->
+![CD process](./assets/xweeter-app-deployment/cd.png)
 
 The app now can be accessed on the server.
 
-<!-- ![The app on the server](docs/deployed.png) -->
+![The app on the server](./assets/xweeter-app-deployment/deployed.png)
 
 ### 4. Configuring the web server
 
@@ -394,7 +394,7 @@ The final step is to create a domain name to make the server accessible without 
 
 #### Creating a domain in FreeDNS
 
-<!-- ![Domain in FreeDNS](docs/domain.png) -->
+![Domain in FreeDNS](./assets/xweeter-app-deployment/domain.png)
 
 Now we can access the app in the domain [xweeter.strangled.net](https://xweeter.strangled.net)
 
@@ -412,7 +412,7 @@ sudo certbot --nginx -d "xweeter.strangled.net"
 
 After generating the SSL certificate, the connection is now secured with HTTPS.
 
-<!-- ![Web accessed via a domain name and connection already on HTTPS](docs/https.png) -->
+![Web accessed via a domain name and connection already on HTTPS](./assets/xweeter-app-deployment/https.png)
 
 ## Conclusion
 
