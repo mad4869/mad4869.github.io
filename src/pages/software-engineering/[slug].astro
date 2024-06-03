@@ -34,11 +34,15 @@ const { Content } = await porto.render();
     <main
         class="min-h-[calc(100dvh-8rem)] text-fuchsia-400 py-8 px-16 space-y-4"
     >
-        <section class="flex items-center justify-between">
-            <div>
+        <section
+            class="flex flex-col items-center justify-center gap-2 sm:justify-between sm:flex-row"
+        >
+            <div class="text-center space-y-1 sm:text-left">
                 <h1 class="text-3xl font-bold">{porto.data.title}</h1>
                 <h6>{porto.data.description}</h6>
-                <span class="text-xs flex gap-2">
+                <span
+                    class="text-xs flex sm:gap-2 sm:flex-row flex-col items-center justify-center sm:justify-start"
+                >
                     <a
                         href={porto.data.repo}
                         target="_blank"
@@ -47,7 +51,7 @@ const { Content } = await porto.render();
                         title={`View ${porto.data.title} on GitHub`}
                         >{porto.data.repo.replace("https://", "")}</a
                     >
-                    <p>|</p>
+                    <p class="hidden sm:block">|</p>
                     <p>
                         {
                             porto.data.date.toLocaleDateString("id-ID", {
@@ -59,10 +63,15 @@ const { Content } = await porto.render();
                     </p>
                 </span>
             </div>
-            <div>
+            <div class="flex justify-center gap-2 items-center sm:block">
                 {
-                    porto.data.categories?.map((cat: any) => (
-                        <p class="text-xs text-fuchsia-400/50">{cat}</p>
+                    porto.data.categories?.map((cat) => (
+                        <>
+                            <p class="text-xs text-fuchsia-400/50">{cat}</p>
+                            <p class="text-fuchsia-200/50 last-of-type:hidden sm:hidden">
+                                |
+                            </p>
+                        </>
                     ))
                 }
             </div>
