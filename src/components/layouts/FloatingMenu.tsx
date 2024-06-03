@@ -21,9 +21,10 @@ function FloatingMenu() {
     ]
 
     return (
-        <ul className="flex flex-col absolute right-4 top-12 text-xs py-2 px-4 border border-fuchsia-800 border-solid rounded-xl bg-black/75 z-10">
+        <ul>
             {menus.map(menu => (
                 <li
+                    key={menu.name}
                     title={menu.title}
                     className="border-b border-solid border-fuchsia-800/50 py-1 last:border-none">
                     <a

@@ -23,7 +23,7 @@ function Menu() {
     return (
         <ul className="items-center justify-center gap-8 hidden sm:flex">
             {menus.map(menu => (
-                <li title={menu.title}>
+                <li key={menu.name} title={menu.title}>
                     <a
                         href={`/${menu.name}`}
                         className={`
