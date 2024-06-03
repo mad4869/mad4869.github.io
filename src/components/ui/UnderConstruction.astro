@@ -3,9 +3,15 @@ import { Image } from "astro:assets";
 import construction from "@/assets/construction.svg";
 ---
 
-<Image
-    src={construction}
-    alt="Construction image"
-    width={construction.width / 2}
-/>
-<h2 class="mt-4 text-3xl font-bold text-fuchsia-400">Under construction</h2>
+<div class="flex md:flex-row flex-col gap-2 items-center">
+    <Image
+        src={construction}
+        alt="Construction image"
+        width={construction.width / 2}
+    />
+    <h2
+        class="mt-4 text-3xl font-bold text-fuchsia-400 text-center md:text-left"
+    >
+        Under construction
+    </h2>
+</div>

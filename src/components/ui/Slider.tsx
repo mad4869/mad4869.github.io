@@ -55,14 +55,14 @@ const Slider = ({ portos }: SliderProps) => {
                 data-twe-target="#carouselExampleCaptions"
                 data-twe-slide="prev"
             >
-                <span className="inline-block h-8 w-8">
+                <span className="inline-block w-8 h-8">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="h-6 w-6"
+                        className="w-6 h-6"
                     >
                         <path
                             strokeLinecap="round"
@@ -83,14 +83,14 @@ const Slider = ({ portos }: SliderProps) => {
                 data-twe-target="#carouselExampleCaptions"
                 data-twe-slide="next"
             >
-                <span className="inline-block h-8 w-8">
+                <span className="inline-block w-8 h-8">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                         strokeWidth="1.5"
                         stroke="currentColor"
-                        className="h-6 w-6"
+                        className="w-6 h-6"
                     >
                         <path
                             strokeLinecap="round"

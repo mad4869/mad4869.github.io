@@ -21,11 +21,11 @@ const Card = ({ porto, isFirstItem }: CardProps) => {
           alt="..."
           loading={isFirstItem ? "eager" : "lazy"} />
         <div
-          className="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-b from-transparent to-slate-900 opacity-80" />
+          className="absolute top-0 bottom-0 left-0 right-0 w-full h-full overflow-hidden bg-gradient-to-b from-transparent to-slate-900 opacity-80" />
       </div>
-      <div className="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+      <div className="absolute inset-x-[15%] bottom-5 py-5 text-center text-white text-xs lg:text-base">
         <a href={`/software-engineering/${porto.slug}`} title={`View ${porto.data.title} in detail`}>
-          <h5 className="text-xl hover:scale-110 transition-transform duration-200">{porto.data.title}</h5>
+          <h5 className="text-xl transition-transform duration-200 hover:scale-110">{porto.data.title}</h5>
         </a>
         <p>
           {porto.data.description}

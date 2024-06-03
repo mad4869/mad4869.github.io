@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import { SiWattpad } from "react-icons/si";
 import { FaTwitter, FaGithubAlt } from "react-icons/fa";
 
+import Menu from "./Menu";
+import MobileMenu from "./MobileMenu";
 import logo from "../../assets/logo.svg";
 import logoKK from "../../assets/logo-kk.svg";
 import logoKwik from "../../assets/logo-kwik.svg";
@@ -15,46 +17,13 @@ import logoKwik from "../../assets/logo-kwik.svg";
         <Image
             src={logo}
             alt="Logo Blog"
-            loading="lazy"
             width={50}
             class="drop-shadow-[0_0_10px_rgba(232,121,249,0.5)]"
         />
     </a>
-    <ul class="flex items-center justify-center gap-8">
-        <li title="Self-introduction">
-            <a
-                href="/about"
-                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
-            >
-                About
-            </a>
-        </li>
-        <li title="Software engineering portfolio">
-            <a
-                href="/software-engineering"
-                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
-            >
-                Software Engineering
-            </a>
-        </li>
-        <li title="Writing portfolio">
-            <a
-                href="/writing"
-                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
-            >
-                Writing
-            </a>
-        </li>
-        <li title="Some random rambling about anything">
-            <a
-                href="/notes"
-                class="pb-1 transition-colors border-fuchsia-400 hover:text-fuchsia-400"
-            >
-                Notes
-            </a>
-        </li>
-    </ul>
-    <ul class="flex items-center justify-center gap-4">
+    <Menu client:only="react" />
+    <MobileMenu client:only="react" />
+    <ul class="hidden items-center justify-center gap-4 md:flex">
         <li
             class="transition-all hover:text-fuchsia-400 hover:scale-110"
             title="Go to Twitter"
@@ -92,7 +61,6 @@ import logoKwik from "../../assets/logo-kwik.svg";
                     alt="Logo KaryaKarsa"
                     width={10}
                     height={10}
-                    loading="lazy"
                 />
             </a>
         </li>
@@ -103,7 +71,6 @@ import logoKwik from "../../assets/logo-kwik.svg";
                     alt="Logo Kwikku"
                     width={15}
                     height={15}
-                    loading="lazy"
                 />
             </a>
         </li>
