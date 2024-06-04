@@ -13,9 +13,9 @@ repo: https://github.com/mad4869/quote-typing-game-pwa
 
 ## Process
 
-### Building Web Manifest
+### Building the Web Manifest
 
-To create a PWA, first we need to build a web manifest that contains all the properties needed to define how the app should look like as a native app. Here I define the web manifest in the `app.webmanifest` file, with all these properties laid out:
+To create a PWA, we first need to build a web manifest that contains all the necessary properties to define how the app should look and behave like a native app. Here, I define the web manifest in the `app.webmanifest` file with all these properties laid out:
 
 ```json
 {
@@ -65,9 +65,9 @@ To create a PWA, first we need to build a web manifest that contains all the pro
 }
 ```
 
-### Configure Service Worker
+### Configuring the Service Worker
 
-The second step is to configure a service worker that would act as an internal web server that serves all the web content inside multiple devices. Here I am using __Workbox__ as a tool to generate the service worker as well as configure the caching strategy for all the app assets.
+The second step is to configure a service worker that acts as an internal web server, serving all the web content across multiple devices. Here, I am using __Workbox__ as a tool to generate the service worker and configure the caching strategy for all the app assets. The configuration is located inside `workbox-config.cjs`.
 
 ```js
 /* global module */
@@ -134,6 +134,15 @@ module.exports = {
     ],
 };
 ```
+
+## Testing
+
+If all goes well, we should be able to see the installation button on the browser toolbar, both on desktop and mobile devices.
+
+![Installation button in desktop](./assets/quote-typing-game-pwa/quote-typing-game-pwa.png)
+![Installation button in mobile](./assets/quote-typing-game-pwa/pwa-mobile.jpg)
+
+After we select Install, the app can now be accessed as if it were a native app.
 
 ## Conclusion
 
