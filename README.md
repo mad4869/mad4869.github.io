@@ -22,6 +22,7 @@ I am a graduate of the Dentistry program at Universitas Airlangga, currently tra
 - Advanced data engineering, including data streaming, batch processing, and working with big data technologies like Hadoop and Spark
 - Cloud platforms (AWS, Google Cloud)
 - Machine learning basics
+- Mobile development (React Native/Dart-Flutter/Kotlin-Jetpack Compose)
 
 👯 I’m looking to collaborate on:
 
@@ -32,8 +33,8 @@ I am a graduate of the Dentistry program at Universitas Airlangga, currently tra
 
 ## 📫 How to reach me
 
-- Email: <mad4869@gmail.com>
-- LinkedIn: [Muhammad Akbar Dermawan](https://www.linkedin.com/in/muhammad-akbar-dermawan-86a90830a/)
+- Email: [mad4869@gmail.com](mailto:mad4869@gmail.com)
+- LinkedIn: [Muhammad Akbar Dermawan](https://www.linkedin.com/in/makbard/)
 - Twitter: [@MAD4869](https://x.com/MAD4869/)
 
 Feel free to reach out if you want to connect or have any questions!
