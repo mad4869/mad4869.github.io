@@ -139,7 +139,7 @@ module.exports = {
 
 If all goes well, we should be able to see the installation button on the browser toolbar, both on desktop and mobile devices.
 
-![Installation button in desktop](./assets/quote-typing-game-pwa/quote-typing-game-pwa.png)
+![Installation button in desktop](./assets/quote-typing-game-pwa/pwa-desktop.png)
 ![Installation button in mobile](./assets/quote-typing-game-pwa/pwa-mobile.jpg)
 
 After we select Install, the app can now be accessed as if it were a native app.
