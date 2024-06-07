@@ -69,16 +69,16 @@ After setting up the backend, the next step is to build the UI components using 
 
 ### Getting current location's weather data
 
-![Asking permission to access location](./assets/fun-weather/ss%20(2).png)
-![Getting weather data after granting permission](./assets/fun-weather/ss%20(3).png)
-![Weather details](./assets/fun-weather/ss%20(4).png)
+![Asking permission to access location](./assets/fun-weather/ss-(2).png)
+![Getting weather data after granting permission](./assets/fun-weather/ss-(3).png)
+![Weather details](./assets/fun-weather/ss-(4).png)
 
 The Geolocation browser API can only be accessed in a secure connection so I disabled a Chrome flag temporarily.
 
 ### Getting other location's weather data
 
-![Getting weather data after inputting a location](./assets/fun-weather/ss%20(5).png)
-![Weather details](./assets/fun-weather/ss%20(1).png)
+![Getting weather data after inputting a location](./assets/fun-weather/ss-(5).png)
+![Weather details](./assets/fun-weather/ss-(1).png)
 
 ## Conclusion
 
