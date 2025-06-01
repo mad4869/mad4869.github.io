@@ -14,7 +14,7 @@ interface Props {
 const {
 	title,
 	description = "MAkbarD's blog",
-	image = "/img/blog/logo.svg",
+	image = "/favicon.svg",
 	useFooter = true,
 } = Astro.props;
 ---
@@ -27,6 +27,8 @@ const {
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="og:title" content={title} />
+		<meta name="og:description" content={description} />
 		<meta name="og:image" content={image} />
 		<title>{title}</title>
 		<ViewTransitions />
